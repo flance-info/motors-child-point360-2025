@@ -326,10 +326,19 @@ function stm_ajax_add_a_car_media_child()
 
     if (class_exists('WooCommerce') && $dealer_ppl && !$updating && !empty($redirect_type) && 'pay' === $redirect_type) {
 
-        update_post_meta($post_id, '_price', $pay_per_listing_price);
-        update_post_meta($post_id, 'pay_per_listing', 'pay');
-		empty_woocommerce_cart_if_not_empty();
-        $checkout_url = wc_get_checkout_url() . '?add-to-cart=' . $post_id;
+        $user_roles = wp_get_current_user()->roles;
+       
+        if (in_array('administrator', $user_roles) || in_array('subscriber', $user_roles)) {
+            $payment_response = create_and_process_automatic_order($post_id, $pay_per_listing_price);
+            $checkout_url = $response['url'] = $payment_response['url'];
+            $response['message'] = $payment_response['message'];
+        }else{
+            update_post_meta($post_id, '_price', $pay_per_listing_price);
+            update_post_meta($post_id, 'pay_per_listing', 'pay');
+            empty_woocommerce_cart_if_not_empty();
+            $checkout_url = wc_get_checkout_url() . '?add-to-cart=' . $post_id;
+        }
+
     }
 
     $response['url'] = (!empty($redirect_type) && 'pay' === $redirect_type) ? $checkout_url : esc_url(get_author_posts_url($user_id));
