@@ -1,0 +1,189 @@
+/*
+	Theme Name: Motors - Child Theme
+	Theme URI: http://motors.stylemixthemes.com/
+	Author: StylemixThemes
+	Author URI: http://stylemixthemes.com/
+	Description: Motors Child theme
+	Version: 6.5
+	License: GNU General Public License v2 or later
+	License URI: http://www.gnu.org/licenses/gpl-2.0.html
+	Tags: blue, red, one-column, two-columns, three-columns, four-columns, left-sidebar, right-sidebar, fixed-layout, fluid-layout, responsive-layout, flexible-header, custom-background, custom-colors, custom-header, custom-menu, editor-style, sticky-post, theme-options
+	Text Domain: motors-child
+    Template: motors
+
+    This theme, like WordPress, is licensed under the GPL.
+    Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+.stm-form-1-quarter .stm-label {
+    font-size: 11px !important;
+}
+
+.stm-form-1-end-unit.clearfix {
+    margin-top: 0 !important;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow b:before {
+    color: #9c9aad;
+}
+
+.stm-form-1-quarter.stm_textarea {
+    width: 100% !important;
+}
+
+body.stm_motors_listing_types_multilisting_active .stm_add_car_form
+.stm_add_car_form_1 .stm-form-1-end-unit .stm-form-1-quarter
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+    background-color: #eceff3;
+    border: 1px solid #eceff3;
+}
+
+.stm-form-1-quarter.stm_textarea .form-control{
+}
+
+body .stm-form-1-quarter:last-child .stm-label {
+    color: #000 !important;
+}
+
+body .stm-form1-intro-unit .stm-label.heading-font {
+    color: rgba(156,193,74,1) !important;
+}
+
+body .stm-form1-intro-unit .select2-container .select2-selection--single .select2-selection__rendered{
+    background-color: #eceff3 !important;
+    border: 1px solid #eceff3;
+    color: #9c9aad !important;
+}
+
+.stm_motors_listing_types_multilisting_active .stm_add_car_form .stm_add_car_form_1 .stm-form1-intro-unit {
+    background-color: transparent !important;
+}
+
+
+/* Add your own styles here */
+.stm_motors_listing_types_multilisting_active .listing-type-list .card .card-body .card-title{
+    color: #fff;
+}
+
+
+.multilisting-buttons-wrap .card-icon:before {
+    font-size: 28px;
+    color: #fff;
+}
+
+.stm_motors_listing_types_multilisting_active .listing-type-list .card .card-body {
+    background: rgba(156,193,74,1);
+}
+
+.listing-type-list .card .card-body .card-icon i {
+    color: #fff;
+}
+
+.stm-add-videos-unit.stm {
+    position: relative;
+    display: grid;
+    padding-top: 0 !important;
+    padding-bottom: 25px !important;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.stm-add-videos-unit.stm input[type=file] {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 30;
+    cursor: pointer;
+}
+
+.stm_motors_listing_types_multilisting_active .stm_add_car_form .stm_add_car_form_1 .stm-form-1-end-unit .stm-form-1-quarter input[type=text], .stm_motors_listing_types_multilisting_active .stm_add_car_form .stm_add_car_form_1 .stm-form-1-end-unit .stm-form-1-quarter input[type=date] {
+    float: right;
+    max-width: 220px;
+    padding-left: 13px;
+    border-width: 1px !important;
+    color: #555;
+
+    display: block;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 21px;
+    font-weight: 400;
+    border: 2px solid #eceff3;
+    font-size: 14px;
+    outline: none !important;
+    background-color: #eceff3;
+}
+
+.row.row-3.car-listing-row .col-md-6 {
+    width: 33.33333% !important;
+}
+
+.row.row-3.car-listing-row .col-md-6:nth-child(3n+1) {
+    clear: both;
+}
+@media (max-width: 768px) {
+    .row.row-3.car-listing-row .col-md-6 {
+        width: 100% !important;
+    }
+}
+
+
+
+
+
+
+
+.stm-video-link-unit-wrap:nth-child(2), .stm-video-link-unit-wrap:nth-child(3) {
+    display: none !important;
+}
+
+.stm_add_car_form .stm-form-4-videos .stm-video-link-unit .stm-after-video.active:after {
+    top: 19px;
+    left: 14px;
+    width: 11px;
+    height: 3px;
+    background-color: #fff;
+}
+
+.stm_add_car_form .stm-form-4-videos .stm-video-link-unit .stm-after-video.active:before {
+    top: 15px;
+    left: 18px;
+    width: 3px;
+    height: 11px;
+}
+
+body.woocommerce-cart .entry-header,
+body.woocommerce-checkout .entry-header {
+    margin-bottom: 50px;
+    z-index: 1;
+}
+
+.stm-listing-point {
+    position: absolute;
+    right: 7px;
+    top: 7px;
+    padding: 3px 5px 3px 6px;
+    background: rgba(0, 0, 0, 0.3);
+    color: #fff;
+    border-radius: 2px;
+    font-size: 16px;
+    opacity: 1;
+    z-index: 20;
+    background: #9cc14a;
+    border-radius: 50%;
+    text-transform: uppercase;
+}
+.stm-listing-point.stm-place {
+    right: 20px;
+}
+
+.stm-filter_stm-layout {
+    display: none;
+}
+
+ul.add-car-btns-wrap {
+    list-style: none;
+}

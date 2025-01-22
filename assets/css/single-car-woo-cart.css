@@ -1,0 +1,181 @@
+.stm-motors-woocommerce-cart__option{
+    display: flex;
+    margin: 15px 0 0;
+}
+
+.stm-motors-woocommerce-cart__row{
+    display: flex;
+    margin: 0 0 40px;
+}
+
+.stm-motors-woocommerce-cart__option--checkbox{
+    margin: 0 15px 0 0;
+}
+
+.stm-motors-woocommerce-cart__option--title{
+    font-size: 20px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.stm-motors-woocommerce-cart__option--title:hover .stm-motors-woocommerce-cart__option--image{
+    opacity: 1;
+    visibility: visible;
+}
+
+.stm-motors-woocommerce-cart__option--image{
+    position: absolute;
+    bottom: 120%;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.stm-motors-woocommerce-cart__option--image img{
+    width: 180px;
+    height: 100px;
+    max-width: max-content;
+}
+
+.stm-motors-woocommerce-cart__options{
+    flex: 0 0 40%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.18), inset 0 4px 0 rgba(156,193,74,1);
+    padding: 20px;
+    margin: 0 15px 0 0;
+}
+
+.stm-motors-woocommerce-cart__basket{
+    flex: 0 0 57%;
+    margin: 0px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.18), inset 0 4px 0 rgba(156,193,74,1);
+    padding: 20px;
+}
+
+.stm-motors-woocommerce-cart__option--checkbox div.checker,
+.stm-motors-woocommerce-cart__option--checkbox div.checker span,
+.stm-motors-woocommerce-cart__option--checkbox div.checker input{
+    width: 30px;
+    height: 30px;
+}
+
+.stm-motors-woocommerce-cart__option--title{
+    color: var(--sections-option-color, #888888);
+}
+
+.stm-motors-woocommerce-cart__option--checkbox div.checker span{
+    background-size: 60px;
+}
+
+.stm-motors-woocommerce-cart__option--checkbox div.checker span.checked{
+    background-position: -30px 0;
+}
+
+.stm-motors-woocommerce-cart__option--price{
+    display: block;
+    margin-top: 10px;
+}
+
+.stm-motors-woocommerce-cart__row .woocommerce table.shop_table th{
+    font-size: 15px;
+}
+
+.stm-motors-woocommerce-cart__row table.shop_table .product-name,
+.stm-motors-woocommerce-cart__row table.shop_table .product-price > .woocommerce-Price-amount{
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.stm-motors-woocommerce-cart__row table.shop_table td.product-name,
+.stm-motors-woocommerce-cart__row table.shop_table td.product-price{
+    border-bottom: 1px solid #232628;
+    padding: 15px 12px;
+}
+
+.stm-motors-woocommerce-cart__row .woocommerce-notices-wrapper{
+    display: none;
+}
+
+.stm-motors-woocommerce-cart__row .woocommerce-cart-total{
+    border-bottom: 1px solid #232628;
+    padding: 15px 12px;
+    color: #232628;
+    font-size: 17px;
+    font-weight: 600;
+    font-family: Montserrat, Arial, serif;
+    text-align: right;
+}
+
+.stm-motors-woocommerce-cart__bottom{
+    margin: 0 0 30px;
+    text-align: right;
+}
+
+.stm-motors-woocommerce-cart__bottom .stm-motors-woocommerce-checkout{
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #231F20;
+    font-family: "Montserrat", Sans-serif;
+    font-weight: 600;
+    padding: 12px 24px;
+    font-size: 15px;
+}
+.stm-no-options .stm-motors-woocommerce-cart__column.stm-motors-woocommerce-cart__options {
+
+    display:none;
+}
+
+.stm-no-options
+.stm-motors-woocommerce-cart__row,
+.stm-no-cart .stm-motors-woocommerce-cart__row {
+    display: block
+}
+
+.stm-no-cart
+.stm-motors-woocommerce-cart__column.stm-motors-woocommerce-cart__basket {
+    display: none;
+}
+
+.stm-no-options  .shop_table thead tr,
+.stm-no-options  .shop_table tbody tr {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.stm-no-options  .shop_table th,
+.stm-no-options  .shop_table td {
+    flex: 1;
+    text-align: left;
+}
+.stm-no-options td.product-price {
+    text-align: right;
+}
+.stm-no-options
+th.product-price {
+    text-align: center !important;
+}
+.stm-no-options  .shop_table th.product-name,
+.stm-no-options  .shop_table td.product-name {
+    flex: 9;
+}
+
+.stm-no-options  .shop_table th.product-price {
+    flex: 1;
+}
+
+.stm-no-options  .shop_table td.product-price {
+    flex: 1;
+}
+@media screen and (max-width: 767px) {
+    .stm-motors-woocommerce-cart__row{
+        flex-direction: column;
+    }
+
+    .stm-motors-woocommerce-cart__basket{
+        margin: 15px 0 0;
+    }
+
+    .stm-motors-woocommerce-cart__options{
+        margin: 0 0 15px;
+    }
+}

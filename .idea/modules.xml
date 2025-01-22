@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../../plugins/Jepotech/.idea/Jepotech.iml" filepath="$PROJECT_DIR$/../../plugins/Jepotech/.idea/Jepotech.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../motors/.idea/motors.iml" filepath="$PROJECT_DIR$/../motors/.idea/motors.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/motors-child.iml" filepath="$PROJECT_DIR$/.idea/motors-child.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../plugins/motors-elementor-widgets/.idea/motors-elementor-widgets.iml" filepath="$PROJECT_DIR$/../../plugins/motors-elementor-widgets/.idea/motors-elementor-widgets.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../plugins/motors-listing-types/.idea/motors-listing-types.iml" filepath="$PROJECT_DIR$/../../plugins/motors-listing-types/.idea/motors-listing-types.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../plugins/stm-megamenu/.idea/stm-megamenu.iml" filepath="$PROJECT_DIR$/../../plugins/stm-megamenu/.idea/stm-megamenu.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../plugins/stm-motors-extends/.idea/stm-motors-extends.iml" filepath="$PROJECT_DIR$/../../plugins/stm-motors-extends/.idea/stm-motors-extends.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../plugins/stm_vehicles_listing/.idea/stm_vehicles_listing.iml" filepath="$PROJECT_DIR$/../../plugins/stm_vehicles_listing/.idea/stm_vehicles_listing.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../plugins/subscriptio/.idea/subscriptio.iml" filepath="$PROJECT_DIR$/../../plugins/subscriptio/.idea/subscriptio.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../plugins/woocommerce/.idea/woocommerce.iml" filepath="$PROJECT_DIR$/../../plugins/woocommerce/.idea/woocommerce.iml" />
+    </modules>
+  </component>
+</project>

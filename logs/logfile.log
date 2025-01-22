@@ -1,0 +1,3586 @@
+ Array
+(
+    [general_tab] => Array
+        (
+            [name] => General
+            [fields] => Array
+                (
+                    [header_current_layout] => Array
+                        (
+                            [label] => 
+                            [type] => stm-hidden
+                            [value] => listing_three_elementor
+                        )
+
+                    [site_style] => Array
+                        (
+                            [label] => Theme Skin
+                            [type] => select
+                            [options] => Array
+                                (
+                                    [site_style_default] => Default
+                                    [site_style_custom] => Custom Colors
+                                )
+
+                            [value] => site_style_default
+                            [group] => started
+                        )
+
+                    [site_style_base_color] => Array
+                        (
+                            [label] => Custom Base Car Dealer Color
+                            [type] => color
+                            [value] => #cc6119
+                            [dependency] => Array
+                                (
+                                    [key] => site_style
+                                    [value] => site_style_custom
+                                )
+
+                        )
+
+                    [site_style_secondary_color] => Array
+                        (
+                            [label] => Custom Secondary Car Dealer Color
+                            [type] => color
+                            [value] => #6c98e1
+                            [dependency] => Array
+                                (
+                                    [key] => site_style
+                                    [value] => site_style_custom
+                                )
+
+                        )
+
+                    [site_style_base_color_listing] => Array
+                        (
+                            [label] => Custom Base Listing Color
+                            [type] => color
+                            [value] => #1bc744
+                            [dependency] => Array
+                                (
+                                    [0] => Array
+                                        (
+                                            [key] => site_style
+                                            [value] => site_style_custom
+                                        )
+
+                                    [1] => Array
+                                        (
+                                            [key] => header_current_layout
+                                            [value] => listing||listing_one_elementor||listing_two||listing_three||listing_four||listing_four_elementor||listing_five||listing_six||car_magazine
+                                        )
+
+                                )
+
+                            [dependencies] => &&
+                        )
+
+                    [site_style_secondary_color_listing] => Array
+                        (
+                            [label] => Custom Secondary Listing Color
+                            [type] => color
+                            [value] => #153e4d
+                            [group] => ended
+                            [dependency] => Array
+                                (
+                                    [0] => Array
+                                        (
+                                            [key] => site_style
+                                            [value] => site_style_custom
+                                        )
+
+                                    [1] => Array
+                                        (
+                                            [key] => header_current_layout
+                                            [value] => listing||listing_one_elementor||listing_two||listing_three||listing_four||listing_four_elementor||listing_five||listing_six||car_magazine
+                                        )
+
+                                )
+
+                            [dependencies] => &&
+                        )
+
+                    [site_bg_color] => Array
+                        (
+                            [label] => Site Background Color
+                            [type] => color
+                            [value] => 
+                            [mode] => background-color
+                            [output] => body
+                        )
+
+                    [site_boxed] => Array
+                        (
+                            [label] => Enable Boxed Layout
+                            [type] => checkbox
+                            [value] => 
+                            [group] => started
+                        )
+
+                    [bg_image] => Array
+                        (
+                            [label] => Background Image
+                            [type] => image_select
+                            [width] => 50
+                            [height] => 50
+                            [dependency] => Array
+                                (
+                                    [key] => site_boxed
+                                    [value] => not_empty
+                                )
+
+                            [options] => Array
+                                (
+                                    [stm-background-customizer-box_img_5] => Array
+                                        (
+                                            [alt] => 
+                                            [img] => https://point360-jan-2025.test/wp-content/themes/motors/assets/images/tmp/box_img_5_preview.png
+                                        )
+
+                                    [stm-background-customizer-box_img_1] => Array
+                                        (
+                                            [alt] => 
+                                            [img] => https://point360-jan-2025.test/wp-content/themes/motors/assets/images/tmp/box_img_1_preview.png
+                                        )
+
+                                    [stm-background-customizer-box_img_2] => Array
+                                        (
+                                            [alt] => 
+                                            [img] => https://point360-jan-2025.test/wp-content/themes/motors/assets/images/tmp/box_img_2_preview.png
+                                        )
+
+                                    [stm-background-customizer-box_img_3] => Array
+                                        (
+                                            [alt] => 
+                                            [img] => https://point360-jan-2025.test/wp-content/themes/motors/assets/images/tmp/box_img_3_preview.jpg
+                                        )
+
+                                    [stm-background-customizer-box_img_4] => Array
+                                        (
+                                            [alt] => 
+                                            [img] => https://point360-jan-2025.test/wp-content/themes/motors/assets/images/tmp/box_img_4_preview.jpg
+                                        )
+
+                                )
+
+                        )
+
+                    [custom_bg_image] => Array
+                        (
+                            [label] => Custom Background Image
+                            [type] => image
+                            [dependency] => Array
+                                (
+                                    [key] => site_boxed
+                                    [value] => not_empty
+                                )
+
+                            [group] => ended
+                        )
+
+                    [enable_preloader] => Array
+                        (
+                            [label] => Enable Preloader
+                            [type] => checkbox
+                            [value] => 
+                        )
+
+                    [smooth_scroll] => Array
+                        (
+                            [label] => Site smooth scroll
+                            [type] => checkbox
+                            [value] => 
+                        )
+
+                    [google_api_key] => Array
+                        (
+                            [label] => Google Maps API Key
+                            [type] => text
+                            [description] => Enable Google Maps Service. To obtain the keys please visit: <a href="https://cloud.google.com/maps-platform/">here</a>
+                        )
+
+                    [enable_recaptcha] => Array
+                        (
+                            [label] => reCaptcha (v3)
+                            [type] => checkbox
+                            [description] => Enable Google reCaptcha. To obtain the keys please visit: <a href="https://www.google.com/recaptcha/admin">here</a>
+                            [group] => started
+                        )
+
+                    [recaptcha_public_key] => Array
+                        (
+                            [label] => Public key
+                            [type] => text
+                            [dependency] => Array
+                                (
+                                    [key] => enable_recaptcha
+                                    [value] => not_empty
+                                )
+
+                        )
+
+                    [recaptcha_secret_key] => Array
+                        (
+                            [label] => Secret key
+                            [type] => text
+                            [group] => ended
+                            [dependency] => Array
+                                (
+                                    [key] => enable_recaptcha
+                                    [value] => not_empty
+                                )
+
+                        )
+
+                )
+
+        )
+
+    [top_bar] => Array
+        (
+            [name] => Top Bar
+            [fields] => Array
+                (
+                    [top_bar_enable] => Array
+                        (
+                            [label] => Enable
+                            [type] => checkbox
+                            [value] => 1
+                            [submenu] => Main
+                        )
+
+                    [top_bar_bg_color] => Array
+                        (
+                            [label] => Background Color
+                            [type] => color
+                            [mode] => background-color
+                            [output] => #wrapper #top-bar,
+							.top-bar-wrap,
+							#wrapper #header .top-bar-wrap,
+							body.page-template-home-service-layout #top-bar,
+							.stm-template-listing #top-bar,
+							.stm-layout-header-listing #wrapper #top-bar,
+							.stm-layout-header-ev_dealer .top-bar-wrap,
+							.stm-template-car_dealer_two.no_margin #wrapper #stm-boats-header #top-bar:after,
+							.stm-template-aircrafts #wrapper #top-bar,
+							.stm-template-listing_three #top-bar,
+							#wrapper #stm-boats-header #top-bar:after,
+							.stm-template-listing_five .top-bar-wrap 
+                            [value] => #232628
+                            [submenu] => Main
+                        )
+
+                    [top_bar_text_color] => Array
+                        (
+                            [label] => Text Color
+                            [type] => color
+                            [mode] => color
+                            [output] => 
+							#wrapper #top-bar .container,
+							#wrapper .top-bar-wrap,
+							.stm-layout-header-listing #wrapper #top-bar .container,
+							#wrapper #top-bar .container .language-switcher-unit .stm_current_language,
+							.stm-layout-header-car_dealer_two.no_margin #wrapper #stm-boats-header #top-bar .container .top-bar-wrapper .language-switcher-unit .stm_current_language,
+							#wrapper #top-bar .container .top-bar-wrapper .pull-left .stm-multiple-currency-wrap .select2-container--default .select2-selection--single .select2-selection__rendered,
+							.stm-layout-header-car_dealer_two.no_margin #wrapper #stm-boats-header #top-bar .container .top-bar-wrapper .pull-left .stm-multiple-currency-wrap .select2-container--default .select2-selection--single .select2-selection__rendered,
+							#wrapper #stm-boats-header #top-bar .container .top-bar-info li,
+							#wrapper #top-bar .container .header-login-url a,
+							#wrapper #top-bar .container .select2-container--default .select2-selection--single .select2-selection__arrow b,
+							.stm-layout-header-car_dealer_two.no_margin #wrapper #stm-boats-header #top-bar .container .top-bar-wrapper .pull-left .stm-multiple-currency-wrap .select2-container--default .select2-selection--single .select2-selection__arrow b,
+							.stm-layout-header-aircrafts #wrapper #top-bar .container .top-bar-wrapper .pull-left .stm-multiple-currency-wrap .select2-container--default .select2-selection--single .select2-selection__arrow b,
+							.stm-layout-header-car_dealer_two.no_margin #wrapper #stm-boats-header #top-bar .container .header-login-url a,
+							#wrapper #header .top-bar-wrap .stm-c-f-top-bar .stm-top-address-wrap,
+							#wrapper #header .top-bar-wrap .stm-c-f-top-bar .language-switcher-unit .stm_current_language,
+							#wrapper #header .top-bar-wrap .stm-c-f-top-bar .stm-multiple-currency-wrap .select2-container--default .select2-selection--single .select2-selection__rendered,
+							#wrapper #header .top-bar-wrap .stm-c-f-top-bar .select2-container--default .select2-selection--single .select2-selection__arrow b,
+							.stm-layout-header-car_dealer #wrapper #top-bar .container .top-bar-wrapper .pull-left .stm-multiple-currency-wrap .select2-container--default .select2-selection--single .select2-selection__rendered,
+							.stm-layout-header-car_dealer_two #wrapper #top-bar .container .top-bar-wrapper .pull-left .stm-multiple-currency-wrap .select2-container--default .select2-selection--single .select2-selection__rendered,
+							.stm-layout-header-listing #wrapper #top-bar .container .top-bar-wrapper .pull-left .stm-multiple-currency-wrap .select2-container--default .select2-selection--single .select2-selection__rendered,
+							.stm-layout-header-listing_five #wrapper #top-bar .container .top-bar-wrapper .pull-left .stm-multiple-currency-wrap .select2-container--default .select2-selection--single .select2-selection__rendered,
+							.stm-layout-header-listing_five .top-bar-wrap .stm-c-f-top-bar .currency-switcher .stm-multiple-currency-wrap .select2-container--default .select2-selection--single .select2-selection__arrow b,
+							.stm-layout-header-motorcycle #wrapper #top-bar .container .top-bar-wrapper .pull-left .stm-multiple-currency-wrap .select2-container--default .select2-selection--single .select2-selection__rendered,
+							.stm-layout-header-car_rental #wrapper #top-bar .container .top-bar-wrapper .pull-left .stm-multiple-currency-wrap .select2-container--default .select2-selection--single .select2-selection__rendered,
+							.stm-layout-header-car_magazine #wrapper #top-bar .container .top-bar-wrapper .pull-left .stm-multiple-currency-wrap .select2-container--default .select2-selection--single .select2-selection__rendered,
+							.stm-layout-header-aircrafts #wrapper #top-bar .container .top-bar-wrapper .pull-left .stm-multiple-currency-wrap .select2-container--default .select2-selection--single .select2-selection__rendered,
+							.stm-layout-header-equipment #wrapper #top-bar .container .top-bar-wrapper .pull-left .stm-multiple-currency-wrap .select2-container--default .select2-selection--single .select2-selection__rendered,
+							.stm-layout-header-boats #wrapper #top-bar .container .top-bar-wrapper .pull-left .stm-multiple-currency-wrap .select2-container--default .select2-selection--single .select2-selection__rendered
+							
+                            [value] => #ffffff
+                            [submenu] => Main
+                        )
+
+                    [top_bar_icon_color] => Array
+                        (
+                            [label] => Icon Color
+                            [type] => color
+                            [mode] => color
+                            [output] => 
+							#wrapper #top-bar .container .pull-right i,
+							#wrapper #top-bar .container .stm-boats-top-bar-centered i,
+							#wrapper #header .stm-c-f-top-bar i
+							 
+                            [value] => #ffffff
+                            [submenu] => Main
+                        )
+
+                    [top_bar_link_color] => Array
+                        (
+                            [label] => Link Color
+                            [type] => color
+                            [mode] => color
+                            [output] => 
+							body #wrapper #top-bar .container a,
+							body #wrapper .top-bar-wrap a,
+							body #wrapper #stm-boats-header #top-bar .container .top-bar-info li a,
+							body #wrapper #top-bar .container .top_bar_menu ul li a,
+							body #wrapper #top-bar .container .header-login-url a,
+							.stm-layout-header-car_dealer_two.no_margin #wrapper #stm-boats-header #top-bar .container .header-login-url a,
+							body #wrapper #header .top-bar-wrap .stm-c-f-top-bar .stm-top-address-wrap a,
+							.stm-layout-header-car_dealer #wrapper #top-bar .container a,
+							.stm-layout-header-car_dealer_two #wrapper #top-bar .container a,
+							.stm-layout-header-listing #wrapper #top-bar .container a,
+							.stm-layout-header-listing_five #wrapper #top-bar .container a,
+							.stm-layout-header-boats #wrapper #top-bar .container a,
+							.stm-layout-header-motorcycle #wrapper #top-bar .container a,
+							.stm-layout-header-car_rental #wrapper #top-bar .container a,
+							.stm-layout-header-car_magazine #wrapper #top-bar .container a,
+							.stm-layout-header-aircrafts #wrapper #top-bar .container a,
+							.stm-layout-header-equipment #wrapper #top-bar .container a
+							
+                            [value] => #ffffff
+                            [submenu] => Main
+                        )
+
+                    [top_bar_login] => Array
+                        (
+                            [label] => Enable Login/Register
+                            [type] => checkbox
+                            [value] => 
+                            [description] => Depends on chosen theme layout. See more on documentation
+                            [submenu] => Main
+                        )
+
+                    [top_bar_wpml_switcher] => Array
+                        (
+                            [label] => Language Switcher
+                            [type] => checkbox
+                            [value] => 
+                            [description] => WPML plugin is required
+                            [dependency] => Array
+                                (
+                                    [key] => header_current_layout
+                                    [section] => general_tab
+                                    [value] => car_dealer_elementor||car_dealer_elementor_rtl||car_dealer||car_dealer_two||car_dealer_two_elementor||car_magazine||equipment||listing||listing_one_elementor||listing_two||listing_three||listing_three_elementor||listing_four||listing_four_elementor||listing_five||listing_six||motorcycle||aircrafts||boats||car_rental||service
+                                )
+
+                            [submenu] => Main
+                        )
+
+                    [top_bar_currency_enable] => Array
+                        (
+                            [label] => Show Currency Switcher
+                            [type] => checkbox
+                            [value] => 
+                            [submenu] => Main
+                        )
+
+                    [top_bar_address_icon] => Array
+                        (
+                            [label] => Address Icon
+                            [type] => icon_picker
+                            [submenu] => Address
+                        )
+
+                    [top_bar_address] => Array
+                        (
+                            [label] => Address
+                            [type] => text
+                            [value] => 1010 Moon ave, New York, NY US
+                            [submenu] => Address
+                        )
+
+                    [top_bar_address_url] => Array
+                        (
+                            [label] => Google Map Address URL
+                            [type] => text
+                            [submenu] => Address
+                        )
+
+                    [top_bar_address_mobile] => Array
+                        (
+                            [label] => Show Address on Mobile
+                            [type] => checkbox
+                            [value] => 1
+                            [submenu] => Address
+                        )
+
+                    [top_bar_working_hours_icon] => Array
+                        (
+                            [label] => Working Hours Icon
+                            [type] => icon_picker
+                            [submenu] => Working Hours
+                        )
+
+                    [top_bar_working_hours] => Array
+                        (
+                            [label] => Working Hours
+                            [type] => text
+                            [value] => Mon - Sat 8.00 - 18.00
+                            [submenu] => Working Hours
+                        )
+
+                    [top_bar_working_hours_mobile] => Array
+                        (
+                            [label] => Show Working Hours on Mobile
+                            [type] => checkbox
+                            [value] => 1
+                            [submenu] => Working Hours
+                        )
+
+                    [top_bar_phone_icon] => Array
+                        (
+                            [label] => Phone Number Icon
+                            [type] => icon_picker
+                            [submenu] => Phone Number
+                        )
+
+                    [top_bar_phone] => Array
+                        (
+                            [label] => Phone Number
+                            [type] => text
+                            [value] => +1 212-226-3126
+                            [submenu] => Phone Number
+                        )
+
+                    [top_bar_phone_mobile] => Array
+                        (
+                            [label] => Show Phone on Mobile
+                            [type] => checkbox
+                            [value] => 1
+                            [submenu] => Phone Number
+                        )
+
+                    [top_bar_menu] => Array
+                        (
+                            [label] => Menu Enabled
+                            [type] => checkbox
+                            [value] => 
+                            [submenu] => Menu
+                        )
+
+                    [top_bar_menu_font_size] => Array
+                        (
+                            [label] => Menu Font Size
+                            [type] => text
+                            [value] => 14
+                            [mode] => font-size
+                            [units] => px
+                            [output] => #wrapper #top-bar .top_bar_menu ul li a, #wrapper .stm-c-f-top-bar .top_bar_menu ul li a 
+                            [submenu] => Menu
+                        )
+
+                    [top_bar_menu_text_color] => Array
+                        (
+                            [label] => Menu Text Color
+                            [type] => color
+                            [value] => #f1f1f1
+                            [mode] => color
+                            [output] => 
+							body #wrapper #top-bar .container .top-bar-wrapper .pull-right .top_bar_menu ul li a,
+							body #wrapper #top-bar .container .top-bar-wrapper .stm-boats-top-bar-right .top_bar_menu ul li a,
+							#wrapper .stm-c-f-top-bar .top_bar_menu ul li a
+							 
+                            [submenu] => Menu
+                        )
+
+                    [top_bar_menu_hover_text_color] => Array
+                        (
+                            [label] => Menu Hover Text Color
+                            [type] => color
+                            [value] => #ffffff
+                            [mode] => color
+                            [output] => 
+								body #wrapper #top-bar .container .top-bar-wrapper .pull-right .top_bar_menu ul li a:hover,
+								body #wrapper #top-bar .container .top-bar-wrapper .stm-boats-top-bar-right .top_bar_menu ul li a:hover,
+								#wrapper .stm-c-f-top-bar .top_bar_menu ul li a:hover
+						 
+                            [submenu] => Menu
+                        )
+
+                    [top_bar_socials_enable] => Array
+                        (
+                            [label] => Socials
+                            [type] => multi_checkbox
+                            [options] => Array
+                                (
+                                    [facebook] => Facebook
+                                    [twitter] => Twitter
+                                    [vk] => VK
+                                    [instagram] => Instagram
+                                    [behance] => Behance
+                                    [dribbble] => Dribbble
+                                    [flickr] => Flickr
+                                    [git] => Git
+                                    [linkedin] => Linkedin
+                                    [pinterest] => Pinterest
+                                    [yahoo] => Yahoo
+                                    [delicious] => Delicious
+                                    [dropbox] => Dropbox
+                                    [reddit] => Reddit
+                                    [soundcloud] => Soundcloud
+                                    [google] => Google
+                                    [google-plus] => Google +
+                                    [skype] => Skype
+                                    [youtube] => Youtube
+                                    [youtube-play] => Youtube Play
+                                    [tumblr] => Tumblr
+                                    [whatsapp] => Whatsapp
+                                )
+
+                            [submenu] => Socials
+                        )
+
+                )
+
+        )
+
+    [header] => Array
+        (
+            [name] => Header
+            [fields] => Array
+                (
+                    [header_layout] => Array
+                        (
+                            [label] => Header Layout
+                            [type] => select
+                            [options] => Array
+                                (
+                                    [car_dealer] => Dealer
+                                    [car_dealer_two] => Dealer Two
+                                    [ev_dealer] => EV Dealer
+                                    [listing] => Classified
+                                    [listing_five] => Classified Five
+                                    [boats] => Boats
+                                    [motorcycle] => Motorcycle
+                                    [car_rental] => Rental
+                                    [car_magazine] => Magazine
+                                    [aircrafts] => Aircrafts
+                                    [equipment] => Equipment
+                                )
+
+                            [submenu] => Main
+                            [dependency] => Array
+                                (
+                                    [key] => header_current_layout
+                                    [value] => aircrafts||boats||ev_dealer||car_dealer_elementor||car_dealer_elementor_rtl||car_dealer||car_dealer_two||car_dealer_two_elementor||car_magazine||car_rental||equipment||listing||listing_one_elementor||listing_two||listing_three||listing_three_elementor||listing_four||listing_four_elementor||listing_five||motorcycle
+                                    [section] => general_tab
+                                )
+
+                        )
+
+                    [header_bg_color] => Array
+                        (
+                            [label] => Header Background Color
+                            [type] => color
+                            [description] => Does not work when the Transparent Header option for the page is enabled.
+                            [mode] => background-color
+                            [style_important] => 1
+                            [submenu] => Main
+                            [output] => 
+						#header .header-main,
+						#header .stm_motorcycle-header .stm_mc-main.header-main,
+						.home #header .header-main-listing-five.stm-fixed,
+						#header .header-listing.stm-fixed,
+						.header-service.service-notransparent-header,
+						.stm-template-boats .header-listing.stm-fixed,
+						.stm-template-car_dealer_two.no_margin #wrapper #stm-boats-header #header:after,
+						.stm-template-aircrafts:not(.transparent-header) #wrapper #header,
+						.stm-template-ev_dealer.stm-layout-header-car_dealer_two #wrapper #stm-boats-header #header,
+						.stm-layout-header-ev_dealer #wrapper #header .header-main,
+						.stm-layout-header-listing #wrapper #header .header-listing.listing-nontransparent-header,
+						.stm-layout-header-listing #wrapper #header .header-listing:after,
+						.stm-layout-header-equipment #header .header-listing,
+						.stm-layout-header-car_dealer_two.no_margin #wrapper #stm-boats-header #header:after,
+						.stm-layout-header-boats #stm-boats-header #header:after,
+						.stm-template-rental_two #wrapper .header-main
+					
+                        )
+
+                    [header_mobile_bg_color] => Array
+                        (
+                            [label] => Mobile Header Background Color
+                            [type] => color
+                            [mode] => background-color
+                            [style_important] => 1
+                            [submenu] => Main
+                            [output] => #header .header-main.header-main-mobile,
+						#header .header-main.header-main-mobile .mobile-menu-holder,
+						#header .stm_motorcycle-header.header-main-mobile .stm_mc-main.header-main,
+						#header .stm_motorcycle-header.header-main-mobile .stm_mc-nav,
+						.stm-layout-header-car_rental .header-main-mobile .stm-opened-menu-listing,
+						.stm-layout-header-car_rental .header-main-mobile .stm-opened-menu-listing #top-bar,
+						.stm-layout-header-equipment #header .header-listing.header-main-mobile,
+						.stm-layout-header-equipment #header .header-listing.header-main-mobile .header-inner-content .mobile-menu-holder .header-menu,
+						.stm-layout-header-listing #wrapper #header .header-listing.header-main-mobile.listing-nontransparent-header,
+						.stm-layout-header-listing #wrapper #header .header-main-mobile.header-listing:after,
+						.stm-layout-header-listing #wrapper #header .header-main-mobile.header-listing .stm-opened-menu-listing,
+						.stm-layout-header-listing #wrapper #header .header-main-mobile.header-listing .stm-opened-menu-listing #top-bar,
+						#header .header-listing.stm-fixed.header-main-mobile,
+						.header-service.service-notransparent-header.header-main-mobile,
+						.stm-boats-mobile-header,
+						.stm-boats-mobile-menu,
+						.stm-template-aircrafts:not(.home):not(.stm-inventory-page):not(.single-listings) #wrapper #header .header-main-mobile,
+						.stm-layout-header-aircrafts #header .header-listing.header-main-mobile,
+						.stm-template-rental_two #wrapper .header-main.header-main-mobile,
+						.header-magazine.header-main-mobile,
+						.header-magazine.header-main-mobile .stm-opened-menu-magazine,
+						.stm-layout-header-motorcycle .stm_motorcycle-header.header-main-mobile .stm_mc-nav .main-menu .container .inner .header-menu
+					
+                        )
+
+                    [header_mobile_info_bg_color] => Array
+                        (
+                            [label] => Mobile Header Info Background Color
+                            [type] => color
+                            [mode] => background-color
+                            [output] => #header .header-main .header-top-info.open,
+					#header .header-main .logo-main .mobile-contacts-trigger.open
+                            [style_important] => 1
+                            [submenu] => Main
+                            [dependency] => Array
+                                (
+                                    [key] => header_layout
+                                    [value] => car_dealer_elementor||car_dealer_elementor_rtl||car_dealer||listing_four||listing_four_elementor
+                                )
+
+                        )
+
+                    [header_text_color] => Array
+                        (
+                            [label] => Header Text Color
+                            [type] => color
+                            [mode] => color
+                            [submenu] => Main
+                            [output] => 
+						#wrapper #header .header-main .heading-font,
+						#wrapper #header .header-main .heading-font a,
+						#wrapper #stm-boats-header #header .header-inner-content .listing-right-actions .heading-font,
+						#wrapper #header .header-inner-content .listing-right-actions .head-phone-wrap .heading-font,
+						#wrapper #header .header-magazine .container .magazine-service-right .magazine-right-actions .pull-right a.lOffer-compare,
+						#wrapper #header .stm_motorcycle-header .stm_mc-main.header-main .header-main-phone a,
+						.stm-layout-header-listing_five #wrapper .lOffer-compare,
+						.stm-layout-header-listing_five #wrapper .header-main .stm-header-right .head-phone-wrap .ph-title,
+						.stm-layout-header-listing_five #wrapper .header-main .stm-header-right .head-phone-wrap .phone
+						
+                            [dependency] => Array
+                                (
+                                    [key] => header_layout
+                                    [value] => boats||ev_dealer||car_dealer_elementor||car_dealer_elementor_rtl||car_dealer||car_magazine||car_rental||equipment||listing_four||listing_four_elementor||motorcycle||listing_five
+                                )
+
+                        )
+
+                    [header_mobile_text_color] => Array
+                        (
+                            [label] => Mobile Header Text Color
+                            [type] => color
+                            [mode] => color
+                            [style_important] => 1
+                            [submenu] => Main
+                            [output] => 
+						#wrapper #header .header-main.header-main-mobile .heading-font,
+						#wrapper #header .header-main.header-main-mobile .heading-font a,
+						#header .header-main.header-main-mobile,
+						#header .stm_motorcycle-header.header-main-mobile .stm_mc-main.header-main .header-main-phone a,
+						.header-magazine.header-main-mobile .pull-right a
+						
+                            [dependency] => Array
+                                (
+                                    [key] => header_layout
+                                    [value] => car_dealer_elementor||car_dealer_elementor_rtl||car_dealer||car_rental||listing_four||listing_four_elementor||motorcycle
+                                )
+
+                        )
+
+                    [header_icon_color] => Array
+                        (
+                            [label] => Header Socials Icon Color
+                            [type] => color
+                            [mode] => color
+                            [submenu] => Main
+                            [output] => 
+						#wrapper #header .header-main .header-main-socs i,
+						#wrapper #header .header-magazine .magazine-service-right .header-main-socs i
+						
+                            [dependency] => Array
+                                (
+                                    [key] => header_layout
+                                    [value] => car_dealer_elementor||car_dealer_elementor_rtl||car_dealer||car_magazine||listing_four||listing_four_elementor||motorcycle
+                                )
+
+                        )
+
+                    [header_mobile_icon_color] => Array
+                        (
+                            [label] => Mobile Header Socials Icon Color
+                            [type] => color
+                            [mode] => color
+                            [style_important] => 1
+                            [submenu] => Main
+                            [output] => 
+						#wrapper #header .header-main.header-main-mobile .header-main-socs i,
+						#wrapper #header .header-main-mobile .header-main i,
+						#header .stm_motorcycle-header.header-main-mobile .stm_mc-main.header-main .header-main-socs ul li a,
+						.header-magazine.header-main-mobile .pull-right .header-main-socs i
+						
+                            [dependency] => Array
+                                (
+                                    [key] => header_layout
+                                    [value] => motorcycle
+                                )
+
+                        )
+
+                    [header_sticky] => Array
+                        (
+                            [label] => Sticky
+                            [type] => checkbox
+                            [submenu] => Sticky
+                            [dependency] => Array
+                                (
+                                    [key] => header_current_layout
+                                    [value] => aircrafts||boats||ev_dealer||car_dealer_elementor||car_dealer_elementor_rtl||car_dealer||car_dealer_two||car_dealer_two_elementor||car_magazine||car_rental||equipment||listing||listing_one_elementor||listing_two||listing_three||listing_three_elementor||listing_four||listing_four_elementor||listing_five||listing_six||motorcycle||service
+                                    [section] => general_tab
+                                )
+
+                        )
+
+                    [header_sticky_padding] => Array
+                        (
+                            [label] => Padding
+                            [type] => spacing
+                            [units] => Array
+                                (
+                                    [0] => px
+                                    [1] => em
+                                )
+
+                            [output] => .header-service.header-service-fixed.header-service-sticky.service-notransparent-header,
+					.header-service.header-service-fixed.header-service-sticky,
+					.stm-layout-header-listing_five #wrapper #header .header-main.stm-fixed,
+					.header-nav-fixed.header-nav-sticky,
+					.stm-layout-header-car_dealer_two.no_margin #stm-boats-header #header .stm-fixed,
+					.stm-layout-header-ev_dealer #wrapper #header .header-main-ev_dealer.header-listing-fixed.stm-fixed,
+					#wrapper #header .header-listing.stm-fixed,
+					.stm-layout-header-car_magazine #wrapper #header .header-magazine.header-magazine-fixed.stm-fixed
+					
+                            [mode] => padding
+                            [style_important] => 1
+                            [dependencies] => &&
+                            [submenu] => Sticky
+                            [value] => Array
+                                (
+                                    [top] => 10
+                                    [right] => 
+                                    [bottom] => 13
+                                    [left] => 
+                                    [unit] => px
+                                )
+
+                            [dependency] => Array
+                                (
+                                    [0] => Array
+                                        (
+                                            [key] => header_sticky
+                                            [value] => not_empty
+                                        )
+
+                                    [1] => Array
+                                        (
+                                            [key] => header_layout
+                                            [value] => aircrafts||boats||ev_dealer||car_dealer_elementor||car_dealer_elementor_rtl||car_dealer||car_dealer_two||car_dealer_two_elementor||car_magazine||car_rental||equipment||listing||listing_one_elementor||listing_two||listing_three||listing_three_elementor||listing_four||listing_four_elementor||listing_five||listing_six||service
+                                        )
+
+                                )
+
+                        )
+
+                    [header_sticky_bg] => Array
+                        (
+                            [label] => Background Color
+                            [type] => color
+                            [mode] => background-color
+                            [style_important] => 1
+                            [submenu] => Sticky
+                            [output] => 
+						#header-nav-holder .header-nav.header-nav-default.header-nav-sticky,
+						.header-service.header-service-fixed.header-service-sticky.service-notransparent-header,
+						.header-service.header-service-fixed.header-service-sticky,
+						.stm-layout-header-boats #stm-boats-header #header .header-listing-boats.stm-fixed,
+						.stm-layout-header-car_magazine #wrapper #header .header-magazine.header-magazine-fixed.stm-fixed,
+						.stm-layout-header-ev_dealer #wrapper #header .header-main-ev_dealer.header-listing-fixed.stm-fixed,
+						.stm-layout-header-motorcycle #wrapper #header .stm_motorcycle-header.stm-fixed .stm_mc-main.header-main,
+						.stm-layout-header-motorcycle .stm_motorcycle-header.stm-fixed .stm_mc-nav .main-menu .container .inner .header-menu,
+						.stm-layout-header-motorcycle .stm_motorcycle-header.stm-fixed .stm_mc-nav .main-menu .container .inner:before,
+						.stm-layout-header-motorcycle .stm_motorcycle-header.stm-fixed .stm_mc-nav .main-menu .container .inner:after,
+						.stm-layout-header-listing_five #wrapper #header .header-main.stm-fixed,
+						.stm-layout-header-car_dealer_two #stm-boats-header #header .stm-fixed:after,
+						#wrapper #header .header-listing.stm-fixed,
+						#wrapper #header .header-listing.stm-fixed:after
+					
+                            [dependency] => Array
+                                (
+                                    [key] => header_sticky
+                                    [value] => not_empty
+                                )
+
+                        )
+
+                    [phone_settings_start] => Array
+                        (
+                            [label] => Phone Settings
+                            [type] => notice
+                            [group] => started
+                            [submenu] => Main
+                            [dependency] => Array
+                                (
+                                    [key] => header_layout
+                                    [value] => ev_dealer||car_dealer_elementor||car_dealer_elementor_rtl||car_dealer||motorcycle||car_rental||equipment
+                                )
+
+                        )
+
+                    [header_main_phone_show_on_mobile] => Array
+                        (
+                            [label] => Main Phone Show on Mobile
+                            [type] => checkbox
+                            [submenu] => Main
+                            [dependency] => Array
+                                (
+                                    [key] => header_layout
+                                    [value] => motorcycle||car_rental
+                                )
+
+                        )
+
+                    [header_main_phone_icon] => Array
+                        (
+                            [label] => Main Phone Icon
+                            [type] => icon_picker
+                            [style_important] => 1
+                            [submenu] => Main
+                            [dependency] => Array
+                                (
+                                    [key] => header_layout
+                                    [value] => car_dealer_elementor||car_dealer_elementor_rtl||car_dealer||car_rental||equipment
+                                )
+
+                        )
+
+                    [header_main_phone_label_color] => Array
+                        (
+                            [label] => Main Phone Color
+                            [type] => color
+                            [mode] => color
+                            [output] => #wrapper #header .header-main .head-phone-wrap .phone, #wrapper #header .header-main .head-phone-wrap .ph-title
+                            [style_important] => 1
+                            [submenu] => Main
+                            [dependency] => Array
+                                (
+                                    [key] => header_layout
+                                    [value] => ev_dealer
+                                )
+
+                        )
+
+                    [header_main_phone_label] => Array
+                        (
+                            [label] => Main Phone Label
+                            [type] => text
+                            [dependencies] => ||
+                            [submenu] => Main
+                            [dependency] => Array
+                                (
+                                    [0] => Array
+                                        (
+                                            [key] => header_layout
+                                            [value] => ev_dealer||car_dealer_elementor||car_dealer_elementor_rtl||car_dealer||equipment
+                                        )
+
+                                    [1] => Array
+                                        (
+                                            [key] => header_current_layout
+                                            [value] => listing_six
+                                            [section] => general_tab
+                                        )
+
+                                )
+
+                        )
+
+                    [header_main_phone] => Array
+                        (
+                            [label] => Main Phone
+                            [type] => text
+                            [value] => 878-9671-4455
+                            [dependencies] => ||
+                            [submenu] => Main
+                            [dependency] => Array
+                                (
+                                    [0] => Array
+                                        (
+                                            [key] => header_layout
+                                            [value] => ev_dealer||car_dealer_elementor||car_dealer_elementor_rtl||car_dealer||motorcycle||car_rental||equipment
+                                        )
+
+                                    [1] => Array
+                                        (
+                                            [key] => header_current_layout
+                                            [value] => listing_six
+                                            [section] => general_tab
+                                        )
+
+                                )
+
+                        )
+
+                    [header_secondary_phone_label_1_color] => Array
+                        (
+                            [label] => Secondary Phone 1 Label Color
+                            [type] => color
+                            [mode] => color
+                            [output] => #wrapper #header .header-main .header-secondary-phone .phone .phone-label
+                            [style_important] => 1
+                            [submenu] => Main
+                            [dependency] => Array
+                                (
+                                    [key] => header_layout
+                                    [value] => car_dealer_elementor||car_dealer_elementor_rtl||car_dealer
+                                )
+
+                        )
+
+                    [header_secondary_phone_label_1] => Array
+                        (
+                            [label] => Secondary Phone 1 Label
+                            [type] => text
+                            [value] => Service
+                            [submenu] => Main
+                            [dependency] => Array
+                                (
+                                    [key] => header_layout
+                                    [value] => car_dealer_elementor||car_dealer_elementor_rtl||car_dealer
+                                )
+
+                        )
+
+                    [header_secondary_phone_1] => Array
+                        (
+                            [label] => Secondary Phone 1
+                            [type] => text
+                            [value] => 878-3971-3223
+                            [submenu] => Main
+                            [dependency] => Array
+                                (
+                                    [key] => header_layout
+                                    [value] => car_dealer_elementor||car_dealer_elementor_rtl||car_dealer
+                                )
+
+                        )
+
+                    [header_secondary_phone_label_2_color] => Array
+                        (
+                            [label] => Secondary Phone 2 Label Color
+                            [type] => color
+                            [mode] => color
+                            [output] => #wrapper #header .header-main .header-secondary-phone .phone:nth-child(2) .phone-label
+                            [style_important] => 1
+                            [submenu] => Main
+                            [dependency] => Array
+                                (
+                                    [key] => header_layout
+                                    [value] => car_dealer_elementor||car_dealer_elementor_rtl||car_dealer
+                                )
+
+                        )
+
+                    [header_secondary_phone_label_2] => Array
+                        (
+                            [label] => Secondary Phone 2 Label
+                            [type] => text
+                            [value] => Parts
+                            [submenu] => Main
+                            [dependency] => Array
+                                (
+                                    [key] => header_layout
+                                    [value] => car_dealer_elementor||car_dealer_elementor_rtl||car_dealer
+                                )
+
+                        )
+
+                    [header_secondary_phone_2] => Array
+                        (
+                            [label] => Secondary Phone 2
+                            [type] => text
+                            [value] => 878-0910-0770
+                            [group] => ended
+                            [submenu] => Main
+                            [dependency] => Array
+                                (
+                                    [key] => header_layout
+                                    [value] => car_dealer_elementor||car_dealer_elementor_rtl||car_dealer
+                                )
+
+                        )
+
+                    [address_settings_start] => Array
+                        (
+                            [label] => Address Settings
+                            [type] => notice
+                            [group] => started
+                            [submenu] => Main
+                            [dependency] => Array
+                                (
+                                    [key] => header_layout
+                                    [value] => car_dealer_elementor||car_dealer_elementor_rtl||car_dealer
+                                )
+
+                        )
+
+                    [header_address_icon] => Array
+                        (
+                            [label] => Address Icon
+                            [type] => icon_picker
+                            [style_important] => 1
+                            [submenu] => Main
+                            [dependency] => Array
+                                (
+                                    [key] => header_layout
+                                    [value] => car_dealer_elementor||car_dealer_elementor_rtl||car_dealer
+                                )
+
+                        )
+
+                    [header_address] => Array
+                        (
+                            [label] => Address
+                            [type] => text
+                            [value] => 1840 E Garvey Ave South West Covina, CA 91791
+                            [submenu] => Main
+                            [dependency] => Array
+                                (
+                                    [key] => header_layout
+                                    [value] => car_dealer_elementor||car_dealer_elementor_rtl||car_dealer
+                                )
+
+                        )
+
+                    [header_address_url] => Array
+                        (
+                            [label] => Google Map Address URL
+                            [type] => text
+                            [group] => ended
+                            [submenu] => Main
+                            [dependency] => Array
+                                (
+                                    [key] => header_layout
+                                    [value] => car_dealer_elementor||car_dealer_elementor_rtl||car_dealer
+                                )
+
+                        )
+
+                    [header_listing_layout_image_bg] => Array
+                        (
+                            [label] => Listing Layout Header Image for Non-transparent Option
+                            [type] => image
+                            [submenu] => Main
+                            [dependency] => Array
+                                (
+                                    [key] => header_layout
+                                    [value] => listing||listing_one_elementor||listing_two||listing_three||listing_three_elementor||listing_four||listing_four_elementor
+                                )
+
+                        )
+
+                    [sticky_notice] => Array
+                        (
+                            [label] => Settings Not Available on This Layout
+                            [type] => notice
+                            [submenu] => Sticky
+                            [dependency] => Array
+                                (
+                                    [key] => header_current_layout
+                                    [value] => rental_two
+                                    [section] => general_tab
+                                )
+
+                        )
+
+                    [logo] => Array
+                        (
+                            [label] => Logo
+                            [type] => image
+                            [dependency] => Array
+                                (
+                                    [key] => header_current_layout
+                                    [value] => aircrafts||boats||ev_dealer||car_dealer_elementor||car_dealer_elementor_rtl||car_dealer||car_dealer_two||car_dealer_two_elementor||car_magazine||car_rental||rental_two||equipment||listing||listing_one_elementor||listing_two||listing_three||listing_three_elementor||listing_four||listing_four_elementor||listing_five||listing_six||motorcycle||service
+                                    [section] => general_tab
+                                )
+
+                            [submenu] => Logo &amp; Title
+                        )
+
+                    [logo_width] => Array
+                        (
+                            [label] => Logo Width (px)
+                            [description] => The height of the image will increase proportionately
+                            [type] => number
+                            [submenu] => Logo &amp; Title
+                        )
+
+                    [logo_margin_top] => Array
+                        (
+                            [label] => Logo Margin
+                            [type] => spacing
+                            [units] => Array
+                                (
+                                    [0] => px
+                                    [1] => em
+                                )
+
+                            [value] => Array
+                                (
+                                    [top] => 17
+                                    [right] => 
+                                    [bottom] => 
+                                    [left] => 
+                                    [unit] => px
+                                )
+
+                            [dependency] => Array
+                                (
+                                    [key] => header_current_layout
+                                    [value] => aircrafts||boats||ev_dealer||car_dealer_elementor||car_dealer_elementor_rtl||car_dealer||car_dealer_two||car_dealer_two_elementor||car_magazine||car_rental||equipment||listing||listing_one_elementor||listing_two||listing_three||listing_three_elementor||listing_four||listing_four_elementor||listing_five||listing_six||motorcycle||service
+                                    [section] => general_tab
+                                )
+
+                            [submenu] => Logo &amp; Title
+                        )
+
+                    [logo_font_family] => Array
+                        (
+                            [label] => Text Logo Font Family
+                            [type] => typography
+                            [description] => If you dont have logo, you can customize your brand name
+                            [output] => #header .blogname h1
+                            [submenu] => Logo &amp; Title
+                        )
+
+                    [typography_main_menu_font_settings] => Array
+                        (
+                            [label] => Main Menu Font Settings
+                            [type] => typography
+                            [output] => 
+			body #wrapper .main-menu .header-menu > li > a,
+			#wrapper #header .header-menu > li > a,
+			#wrapper #header .listing-menu > li > a,
+			#wrapper #header .header-listing .listing-menu > li > a,
+			#wrapper #header .header-inner-content .listing-service-right .listing-menu > li > a,
+			#wrapper #stm-boats-header #header .header-inner-content .listing-service-right .listing-menu > li > a,
+			#wrapper #header .header-magazine .container .magazine-service-right ul.magazine-menu > li > a,
+			.stm-layout-header-listing_five .header-menu > li > a,
+			.stm-layout-header-aircrafts #wrapper #header .header-inner-content .listing-service-right .listing-menu > li > a,
+			.stm-template-rental_two #wrapper .header-main .header-menu > li > a,
+			body .stm-boats-mobile-menu .listing-menu li a
+		
+                            [submenu] => Menu
+                            [style_important] => 1
+                        )
+
+                    [typography_menu_font_family] => Array
+                        (
+                            [label] => SubMenu Font Family
+                            [type] => typography
+                            [output] => 
+			.main-menu .header-menu > li:not(.stm_megamenu) .sub-menu a,
+			.header-menu > li:not(.stm_megamenu) .sub-menu a,
+			.listing-menu > li:not(.stm_megamenu) .sub-menu a,
+			.header-listing .listing-menu  > li:not(.stm_megamenu) .sub-menu a,
+			.header-inner-content .listing-service-right .listing-menu > li:not(.stm_megamenu) .sub-menu a,
+			#stm-boats-header #header .header-inner-content .listing-service-right .listing-menu > li:not(.stm_megamenu) .sub-menu a,
+			.header-magazine .container .magazine-service-right ul.magazine-menu > li:not(.stm_megamenu) .sub-menu a,
+			.stm-layout-header-listing #wrapper #header .header-listing .listing-menu > li:not(.stm_megamenu) .sub-menu a,
+			.stm-layout-header-listing_five .header-menu > li:not(.stm_megamenu) .sub-menu a,
+			.stm-layout-header-aircrafts .header-inner-content .listing-service-right .listing-menu > li:not(.stm_megamenu) .sub-menu a,
+			.stm-layout-header-motorcycle .stm_motorcycle-header .stm_mc-nav .main-menu .inner .header-menu > li:not(.stm_megamenu) > .sub-menu li a,
+			.stm-layout-header-car_rental #wrapper #header .header-rental .stm-opened-menu-listing .listing-menu-mobile > li:not(.stm_megamenu) .sub-menu li a,
+			.stm-template-rental_two #wrapper .header-main .header-menu > li:not(.stm_megamenu) .sub-menu li a,
+			body .stm-boats-mobile-menu .listing-menu > li:not(.stm_megamenu) .sub-menu li a
+		
+                            [submenu] => Menu
+                            [excluded] => Array
+                                (
+                                    [0] => font-size
+                                    [1] => font-weight
+                                    [2] => font-style
+                                    [3] => google-weight
+                                    [4] => subset
+                                    [5] => text-align
+                                    [6] => word-spacing
+                                    [7] => letter-spacing
+                                    [8] => line-height
+                                    [9] => text-transform
+                                )
+
+                            [style_important] => 1
+                        )
+
+                    [menu_icon_top_margin] => Array
+                        (
+                            [label] => Menu&amp;Icons Area Margin
+                            [type] => spacing
+                            [units] => Array
+                                (
+                                    [0] => px
+                                    [1] => em
+                                )
+
+                            [value] => Array
+                                (
+                                    [top] => 
+                                    [right] => 
+                                    [bottom] => 
+                                    [left] => 
+                                    [unit] => px
+                                )
+
+                            [dependency] => Array
+                                (
+                                    [key] => header_layout
+                                    [value] => aircrafts||boats||car_dealer_two||car_dealer_two_elementor||car_magazine||car_rental||equipment||listing||listing_one_elementor||listing_two||listing_three||listing_three_elementor||listing_four||listing_four_elementor||listing_five||listing_six
+                                )
+
+                            [submenu] => Main
+                        )
+
+                    [menu_top_margin] => Array
+                        (
+                            [label] => Margin
+                            [type] => spacing
+                            [units] => Array
+                                (
+                                    [0] => px
+                                    [1] => em
+                                )
+
+                            [value] => Array
+                                (
+                                    [top] => 
+                                    [right] => 
+                                    [bottom] => 
+                                    [left] => 
+                                    [unit] => px
+                                )
+
+                            [dependency] => Array
+                                (
+                                    [key] => header_layout
+                                    [value] => aircrafts||boats||ev_dealer||car_dealer_elementor||car_dealer_elementor_rtl||car_dealer||car_dealer_two||car_dealer_two_elementor||car_magazine||car_rental||equipment||listing||listing_one_elementor||listing_two||listing_three||listing_three_elementor||listing_four||listing_four_elementor||listing_five||listing_six||service
+                                )
+
+                            [submenu] => Menu
+                        )
+
+                    [hma_item_padding] => Array
+                        (
+                            [label] => Item Padding
+                            [type] => spacing
+                            [mode] => padding
+                            [output] => 
+			#wrapper #header .main-menu .header-menu > li > a,
+			#wrapper #header .header-listing .listing-menu > li > a,
+			#wrapper #header .header-magazine .container .magazine-service-right ul.magazine-menu li > a,
+			.stm-layout-header-car_dealer_two.no_margin #stm-boats-header #header .header-inner-content .listing-service-right .listing-menu > li > a,
+			.stm-layout-header-boats #stm-boats-header #header .header-inner-content .listing-service-right .listing-menu > li > a,
+			.stm-template-rental_two .main-menu .header-menu > li > a,
+			.stm-layout-header-aircrafts #wrapper #header .header-inner-content .listing-service-right .listing-menu > li > a,
+			#header .header-service .header-menu > li > a
+		
+                            [units] => Array
+                                (
+                                    [0] => px
+                                    [1] => em
+                                )
+
+                            [value] => Array
+                                (
+                                    [top] => 
+                                    [right] => 
+                                    [bottom] => 
+                                    [left] => 
+                                    [unit] => px
+                                )
+
+                            [submenu] => Menu
+                        )
+
+                    [hma_background_color] => Array
+                        (
+                            [label] => Background Color
+                            [description] => Does not work when the Transparent Header option for the page is enabled
+                            [type] => color
+                            [mode] => background-color
+                            [output] => 
+					#header-nav-holder .header-nav.header-nav-default,
+					#header .stm_motorcycle-header .stm_mc-nav .main-menu .inner .header-menu,
+					#header .stm_motorcycle-header .stm_mc-nav .main-menu .inner:before,
+					#header .stm_motorcycle-header .stm_mc-nav .main-menu .inner:after
+				
+                            [value] => #eaedf0
+                            [dependency] => Array
+                                (
+                                    [key] => header_layout
+                                    [value] => car_dealer_elementor||car_dealer_elementor_rtl||car_dealer||motorcycle
+                                )
+
+                            [submenu] => Menu
+                        )
+
+                    [hma_item_bg_color] => Array
+                        (
+                            [label] => Item Background Color
+                            [type] => color
+                            [mode] => background-color
+                            [output] => 
+					body #wrapper .main-menu .header-menu > li.current-menu-item > a,
+					body #wrapper .main-menu .header-menu > li > a,
+					body #header .header-main .stm-header-right .main-menu .header-menu > li.current-menu-item > a
+				
+                            [value] => #eaedf0
+                            [dependency] => Array
+                                (
+                                    [key] => header_layout
+                                    [value] => ev_dealer||car_dealer_elementor||car_dealer_elementor_rtl||car_dealer||motorcycle||listing_five
+                                )
+
+                            [submenu] => Menu
+                        )
+
+                    [hma_hover_bg_color] => Array
+                        (
+                            [label] => Item Hover Background Color
+                            [type] => color
+                            [mode] => background-color
+                            [output] => 
+			body #wrapper .main-menu .header-menu > li.current-menu-item > a,
+			body #wrapper .main-menu .header-menu > li.current_page_item > a,
+			body #wrapper .main-menu .header-menu li:hover > a,
+			.stm-layout-header-listing #wrapper #header .header-listing .listing-menu > li > a,
+			.stm-layout-header-aircrafts #wrapper #header .header-inner-content .listing-service-right .listing-menu > li > a,
+			#wrapper #header .header-service .header-menu li a:hover,
+			body #wrapper #header .header-main .stm-header-right .main-menu .header-menu > li:hover > a,
+			.stm-template-rental_two #wrapper .header-main .header-menu li:hover a,
+			.stm-template-rental_two #wrapper .header-main .header-menu > li:not(.stm_megamenu) .sub-menu li:hover > a
+		
+                            [dependency] => Array
+                                (
+                                    [0] => Array
+                                        (
+                                            [key] => header_layout
+                                            [value] => ev_dealer||car_dealer_elementor||car_dealer_elementor_rtl||car_dealer||motorcycle||listing_four||listing_four_elementor||listing_five
+                                        )
+
+                                    [1] => Array
+                                        (
+                                            [key] => header_current_layout
+                                            [value] => service
+                                            [section] => general_tab
+                                        )
+
+                                    [2] => Array
+                                        (
+                                            [key] => header_current_layout
+                                            [value] => rental_two
+                                            [section] => general_tab
+                                        )
+
+                                )
+
+                            [dependencies] => ||
+                            [submenu] => Menu
+                        )
+
+                    [hma_hover_text_color] => Array
+                        (
+                            [label] => Item Hover Text Color
+                            [type] => color
+                            [mode] => color
+                            [output] => 
+			body #wrapper #header .main-menu .header-menu > li.current-menu-item > a,
+			body #wrapper #header .main-menu .header-menu > li.current_page_item > a,
+			body #wrapper .main-menu .header-menu li:hover > a,
+			body #wrapper .main-menu .header-menu > li:hover > a,
+			body #wrapper #header .main-menu .header-menu > li:hover > a,
+			.stm-layout-header-listing #wrapper #header .header-listing .listing-menu > li > a:hover,
+			.stm-layout-header-aircrafts #wrapper #header .header-inner-content .listing-service-right .listing-menu > li > a:hover,
+			.stm-layout-header-car_magazine #wrapper #header .header-magazine .container .magazine-service-right ul.magazine-menu > li > a:hover,
+			.stm-template-rental_two #wrapper .header-main .header-menu li:hover a,
+			.stm-template-rental_two #wrapper .header-main .header-menu > li:not(.stm_megamenu) .sub-menu li:hover > a,
+			#wrapper #header .header-inner-content .listing-service-right .listing-menu > li > a:hover,
+			#wrapper #header .header-service .header-menu li a:hover,
+			body #header .header-main .stm-header-right .main-menu .header-menu > li:hover > a,
+			#wrapper #header .header-inner-content .listing-service-right .listing-menu > li > a:hover
+		
+                            [dependency] => Array
+                                (
+                                    [0] => Array
+                                        (
+                                            [key] => header_layout
+                                            [value] => aircrafts||ev_dealer||car_dealer_elementor||car_dealer_elementor_rtl||car_dealer||car_magazine||car_rental||listing||listing_one_elementor||listing_two||listing_three||listing_three_elementor||listing_four||listing_four_elementor||listing_five||listing_six||motorcycle||service
+                                        )
+
+                                    [1] => Array
+                                        (
+                                            [key] => header_current_layout
+                                            [value] => service
+                                            [section] => general_tab
+                                        )
+
+                                    [2] => Array
+                                        (
+                                            [key] => header_current_layout
+                                            [value] => rental_two
+                                            [section] => general_tab
+                                        )
+
+                                )
+
+                            [dependencies] => ||
+                            [submenu] => Menu
+                            [style_important] => 1
+                        )
+
+                    [hma_underline] => Array
+                        (
+                            [label] => Item Text Decoration Underline Color
+                            [type] => color
+                            [mode] => border-bottom
+                            [output] => 
+					.stm-layout-header-aircrafts #wrapper #header .header-inner-content .listing-service-right .listing-menu > li.current-menu-item > a,
+					.stm-layout-header-car_magazine #wrapper #header .header-magazine .container .magazine-service-right ul.magazine-menu > li.current-menu-item > a
+				
+                            [dependency] => Array
+                                (
+                                    [key] => header_layout
+                                    [value] => aircrafts
+                                )
+
+                            [submenu] => Menu
+                        )
+
+                    [hma_underline_2] => Array
+                        (
+                            [label] => Item Text Decoration Underline Color 2
+                            [type] => color
+                            [mode] => background-color
+                            [output] => 
+					.stm-layout-header-car_dealer_two.no_margin #stm-boats-header #header .header-inner-content .listing-service-right .listing-menu > li > a:after,
+					.stm-layout-header-boats #stm-boats-header #header .header-inner-content .listing-service-right .listing-menu > li > a:after,
+					.stm-layout-header-equipment #header .header-listing .header-inner-content .listing-service-right .listing-menu > li > a:after
+				 
+                            [dependency] => Array
+                                (
+                                    [key] => header_layout
+                                    [value] => car_dealer_two||car_dealer_two_elementor||boats||equipment
+                                )
+
+                            [submenu] => Menu
+                        )
+
+                    [hma_hover_underline] => Array
+                        (
+                            [label] => Item Hover Text Decoration Underline Color
+                            [type] => color
+                            [mode] => border-bottom
+                            [output] => 
+					.stm-layout-header-aircrafts #wrapper #header .header-inner-content .listing-service-right .listing-menu > li > a:hover,
+					.stm-layout-header-aircrafts #wrapper #header .header-inner-content .listing-service-right .listing-menu > li.current-menu-item a:hover,
+					.stm-layout-header-car_magazine #wrapper #header .header-magazine .container .magazine-service-right ul.magazine-menu > li > a:hover
+				
+                            [dependency] => Array
+                                (
+                                    [key] => header_layout
+                                    [value] => aircrafts
+                                )
+
+                            [submenu] => Menu
+                        )
+
+                    [hma_hover_underline_2] => Array
+                        (
+                            [label] => Item Hover Text Decoration Underline Color 2
+                            [type] => color
+                            [mode] => background-color
+                            [output] => 
+					.stm-layout-header-car_dealer_two.no_margin #stm-boats-header #header .header-inner-content .listing-service-right .listing-menu > li > a:hover:after,
+					 .stm-layout-header-boats #stm-boats-header #header .header-inner-content .listing-service-right .listing-menu > li > a:hover:after,
+					 .stm-layout-header-equipment #header .header-listing .header-inner-content .listing-service-right .listing-menu > li > a:hover:after
+					 
+                            [dependency] => Array
+                                (
+                                    [key] => header_layout
+                                    [value] => car_dealer_two||car_dealer_two_elementor||boats||equipment
+                                )
+
+                            [submenu] => Menu
+                        )
+
+                    [header_wpml_switcher] => Array
+                        (
+                            [label] => Language Switcher
+                            [type] => checkbox
+                            [value] => 1
+                            [description] => WPML plugin is required
+                            [dependency] => Array
+                                (
+                                    [key] => header_layout
+                                    [value] => ev_dealer
+                                )
+
+                            [submenu] => Buttons/Actions
+                        )
+
+                    [header_compare_show] => Array
+                        (
+                            [label] => Show Compare
+                            [type] => checkbox
+                            [group] => started
+                            [dependency] => Array
+                                (
+                                    [key] => header_current_layout
+                                    [value] => aircrafts||boats||motorcycle||equipment||ev_dealer||car_dealer_elementor||car_dealer_elementor_rtl||car_dealer||car_dealer_two||car_dealer_two_elementor||car_magazine||equipment||listing||listing_one_elementor||listing_two||listing_three||listing_three_elementor||listing_four||listing_four_elementor||listing_five||listing_five_elementor||listing_six
+                                    [section] => general_tab
+                                )
+
+                            [submenu] => Buttons/Actions
+                        )
+
+                    [header_compare_icon] => Array
+                        (
+                            [label] => Compare Icon
+                            [type] => icon_picker
+                            [group] => ended
+                            [dependency] => Array
+                                (
+                                    [key] => header_compare_show
+                                    [value] => not_empty
+                                )
+
+                            [submenu] => Buttons/Actions
+                        )
+
+                    [header_cart_show] => Array
+                        (
+                            [label] => Show Cart
+                            [type] => checkbox
+                            [description] => Woocommerce needed
+                            [group] => started
+                            [dependency] => Array
+                                (
+                                    [key] => header_current_layout
+                                    [value] => aircrafts||boats||motorcycle||equipment||ev_dealer||car_dealer_elementor||car_dealer_elementor_rtl||car_dealer||car_dealer_two||car_dealer_two_elementor||car_magazine||equipment||listing||listing_one_elementor||listing_two||listing_three||listing_three_elementor||listing_four||listing_four_elementor||listing_five||listing_five_elementor||listing_six
+                                    [section] => general_tab
+                                )
+
+                            [submenu] => Buttons/Actions
+                        )
+
+                    [header_cart_icon] => Array
+                        (
+                            [label] => Cart Icon
+                            [type] => icon_picker
+                            [group] => ended
+                            [dependency] => Array
+                                (
+                                    [key] => header_cart_show
+                                    [value] => not_empty
+                                )
+
+                            [submenu] => Buttons/Actions
+                        )
+
+                    [header_cart_compare_hover_bg] => Array
+                        (
+                            [label] => Compare &amp; Cart Buttons Hover Background Color
+                            [type] => color
+                            [mode] => background-color
+                            [output] => body #wrapper .header-help-bar > ul > li > a:hover
+                            [value] => 
+                            [dependency] => Array
+                                (
+                                    [key] => header_layout
+                                    [value] => car_dealer_elementor||car_dealer_elementor_rtl||car_dealer
+                                )
+
+                            [submenu] => Buttons/Actions
+                            [style_important] => 1
+                        )
+
+                    [header_cart_compare_hover_text_color] => Array
+                        (
+                            [label] => Compare &amp; Cart Buttons Hover Text Color
+                            [type] => color
+                            [mode] => color
+                            [output] => body #wrapper .header-help-bar > ul li a:hover .list-label,
+							body #wrapper .header-help-bar > ul li a:hover .list-icon,
+							.stm-layout-header-listing #wrapper #header .header-listing .listing-right-actions .pull-right a:hover i,
+							.stm-layout-header-ev_dealer #wrapper #header .stm-header-right .lOffer-compare:hover i,
+							.stm-layout-header-ev_dealer #wrapper #header .stm-header-right .lOffer-compare:hover i,
+							.stm-layout-header-ev_dealer #wrapper #header .stm-header-right .help-bar-shop a:hover i,
+							.stm-layout-header-car_magazine #header .header-magazine .container .magazine-service-right .magazine-right-actions .pull-right a:hover,
+							.stm-layout-header-car_magazine #header .header-magazine .container .magazine-service-right .magazine-right-actions .pull-right a:hover i,
+							.stm-layout-header-equipment #wrapper #header .header-inner-content .lOffer-compare:hover i,
+							#wrapper #stm-boats-header #header .header-inner-content .listing-right-actions a:hover .heading-font,
+							#wrapper #stm-boats-header #header .header-inner-content .listing-right-actions a:hover i,
+							.stm-layout-header-motorcycle #header .right-right .pull-right a:hover i,
+							#header .listing-service-right .listing-right-actions .pull-right a:hover i,
+							#header .listing-service-right .listing-right-actions .pull-right a:hover,
+							body #wrapper #header .header-main .stm-header-right a:hover i
+							
+                            [style_important] => 1
+                            [dependency] => Array
+                                (
+                                    [0] => Array
+                                        (
+                                            [key] => header_compare_show
+                                            [value] => not_empty
+                                        )
+
+                                    [1] => Array
+                                        (
+                                            [key] => header_cart_show
+                                            [value] => not_empty
+                                        )
+
+                                )
+
+                            [dependencies] => ||
+                            [submenu] => Buttons/Actions
+                        )
+
+                    [header_show_profile] => Array
+                        (
+                            [label] => Show Profile
+                            [type] => checkbox
+                            [group] => started
+                            [dependency] => Array
+                                (
+                                    [key] => header_current_layout
+                                    [value] => listing||listing_one_elementor||listing_two||listing_three||listing_three_elementor||listing_four||listing_four_elementor||listing_five||listing_five_elementor||listing_six
+                                    [section] => general_tab
+                                )
+
+                            [submenu] => Buttons/Actions
+                        )
+
+                    [header_profile_icon] => Array
+                        (
+                            [label] => Profile Icon
+                            [type] => icon_picker
+                            [dependency] => Array
+                                (
+                                    [key] => header_show_profile
+                                    [value] => not_empty
+                                )
+
+                            [submenu] => Buttons/Actions
+                        )
+
+                    [header_profile_hover_bg] => Array
+                        (
+                            [label] => Profile Button Hover Background Color
+                            [type] => color
+                            [mode] => background-color
+                            [output] => 
+						 .stm-layout-header-listing #wrapper #header .header-listing .listing-right-actions .lOffer-account:hover,
+						 #wrapper #stm-boats-header #header .header-inner-content .listing-right-actions .lOffer-account-unit a:hover,
+						 .stm-layout-header-ev_dealer .lOffer-account-unit .lOffer-account:hover,
+						 .stm-template-listing.stm-layout-header-car_dealer .lOffer-account-unit .lOffer-account:hover,
+						 .stm-template-listing_two.stm-layout-header-car_dealer .lOffer-account-unit .lOffer-account:hover,
+						 .stm-template-listing_three.stm-layout-header-car_dealer .lOffer-account-unit .lOffer-account:hover,
+						 .stm-template-listing_four.stm-layout-header-car_dealer .lOffer-account-unit .lOffer-account:hover,
+						 .stm-template-listing_five.stm-layout-header-car_dealer .lOffer-account-unit .lOffer-account:hover,
+						 .stm-layout-header-motorcycle #header .stm_motorcycle-header .lOffer-account-unit .lOffer-account:hover,
+						 .stm-layout-header-equipment #header .lOffer-account-unit .lOffer-account:hover,
+						 .stm-layout-header-car_rental #header .is-listing .lOffer-account-unit .lOffer-account:hover,
+						 .stm-layout-header-aircrafts #wrapper #header .is-listing .lOffer-account-unit .lOffer-account:hover,
+						 .stm-layout-header-listing_five #wrapper #header .lOffer-account:hover
+						
+                            [dependency] => Array
+                                (
+                                    [key] => header_show_profile
+                                    [value] => not_empty
+                                )
+
+                            [submenu] => Buttons/Actions
+                        )
+
+                    [header_profile_hover_text_color] => Array
+                        (
+                            [label] => Profile Button Hover Text Color
+                            [type] => color
+                            [mode] => color
+                            [output] => 
+						.stm-layout-header-listing #wrapper #header .header-listing .listing-right-actions .pull-right .lOffer-account-unit .lOffer-account:hover i:before,
+						 #wrapper #stm-boats-header #header .header-inner-content .listing-right-actions .lOffer-account-unit a:hover i,
+						 .stm-layout-header-ev_dealer .lOffer-account-unit .lOffer-account:hover i,
+						 .stm-template-listing.stm-layout-header-car_dealer .lOffer-account-unit .lOffer-account:hover i,
+						 .stm-template-listing_two.stm-layout-header-car_dealer .lOffer-account-unit .lOffer-account:hover i,
+						 .stm-template-listing_three.stm-layout-header-car_dealer .lOffer-account-unit .lOffer-account:hover i,
+						 .stm-template-listing_four.stm-layout-header-car_dealer .lOffer-account-unit .lOffer-account:hover i,
+						 .stm-template-listing_five.stm-layout-header-car_dealer .lOffer-account-unit .lOffer-account:hover i,
+						 .stm-layout-header-equipment #header .lOffer-account-unit .lOffer-account:hover i,
+						 .stm-layout-header-motorcycle #header .stm_motorcycle-header .lOffer-account-unit .lOffer-account:hover i,
+						 .stm-layout-header-car_rental #header .is-listing .lOffer-account-unit .lOffer-account:hover i,
+						 .stm-layout-header-aircrafts #wrapper #header .is-listing .lOffer-account-unit .lOffer-account:hover i,
+						 .stm-layout-header-listing_five #wrapper #header .header-main .stm-header-right .lOffer-account:hover i
+						 
+                            [style_important] => 1
+                            [dependency] => Array
+                                (
+                                    [key] => header_show_profile
+                                    [value] => not_empty
+                                )
+
+                            [submenu] => Buttons/Actions
+                            [group] => ended
+                        )
+
+                    [header_show_add_car_button] => Array
+                        (
+                            [label] => Show Add a Car Button
+                            [type] => checkbox
+                            [group] => started
+                            [dependency] => Array
+                                (
+                                    [key] => header_current_layout
+                                    [value] => listing||listing_one_elementor||listing_two||listing_three||listing_three_elementor||listing_four||listing_four_elementor||listing_five||listing_five_elementor||listing_six
+                                    [section] => general_tab
+                                )
+
+                            [submenu] => Buttons/Actions
+                        )
+
+                    [header_listing_btn_text] => Array
+                        (
+                            [label] => Label
+                            [type] => text
+                            [value] => Add your item
+                            [dependency] => Array
+                                (
+                                    [0] => Array
+                                        (
+                                            [key] => header_current_layout
+                                            [value] => listing||listing_one_elementor||listing_two||listing_three||listing_three_elementor||listing_four||listing_four_elementor||listing_five||listing_five_elementor||listing_six
+                                            [section] => general_tab
+                                        )
+
+                                    [1] => Array
+                                        (
+                                            [key] => header_layout
+                                            [value] => aircrafts||boats||ev_dealer||car_dealer_elementor||car_dealer_elementor_rtl||car_dealer||car_dealer_two||car_dealer_two_elementor||car_magazine||equipment||listing||listing_one_elementor||listing_two||listing_three||listing_three_elementor||listing_four||listing_four_elementor||listing_five||listing_five_elementor||motorcycle
+                                        )
+
+                                    [2] => Array
+                                        (
+                                            [key] => header_show_add_car_button
+                                            [value] => not_empty
+                                        )
+
+                                )
+
+                            [dependencies] => &&
+                            [submenu] => Buttons/Actions
+                        )
+
+                    [header_listing_btn_link] => Array
+                        (
+                            [label] => Link
+                            [type] => text
+                            [value] => /add-car
+                            [dependency] => Array
+                                (
+                                    [0] => Array
+                                        (
+                                            [key] => header_current_layout
+                                            [value] => listing||listing_one_elementor||listing_two||listing_three||listing_three_elementor||listing_four||listing_four_elementor||listing_five||listing_five_elementor||listing_six
+                                            [section] => general_tab
+                                        )
+
+                                    [1] => Array
+                                        (
+                                            [key] => header_show_add_car_button
+                                            [value] => not_empty
+                                        )
+
+                                )
+
+                            [dependencies] => &&
+                            [submenu] => Buttons/Actions
+                        )
+
+                    [header_listing_btn_bg_color] => Array
+                        (
+                            [label] => Background Color
+                            [type] => color
+                            [mode] => background-color
+                            [output] => .stm-layout-header-listing #wrapper #header .header-listing .listing_add_cart > div,
+								body #wrapper .header-help-bar > ul li a.listing_add_cart,
+								.stm-layout-header-car_dealer_two.no_margin #stm-boats-header #header .is-listing .listing_add_cart > div,
+								.stm-layout-header-boats #stm-boats-header #header .is-listing .listing_add_cart > div,
+								.stm-layout-header-car_rental #header .is-listing .listing_add_cart > div,
+								.stm-layout-header-equipment #wrapper #header .listing_add_cart > div,
+								.stm-layout-header-aircrafts #wrapper #header .is-listing .listing_add_cart > div,
+							#wrapper #header .stm-header-right .stm-c-f-add-btn-wrap .add-listing-btn
+                            [value] => #1bc744
+                            [dependency] => Array
+                                (
+                                    [0] => Array
+                                        (
+                                            [key] => header_current_layout
+                                            [value] => listing||listing_one_elementor||listing_two||listing_three||listing_three_elementor||listing_four||listing_four_elementor||listing_five||listing_five_elementor||listing_six
+                                            [section] => general_tab
+                                        )
+
+                                    [1] => Array
+                                        (
+                                            [key] => header_layout
+                                            [value] => aircrafts||boats||equipment||ev_dealer||car_dealer_elementor||car_dealer_elementor_rtl||car_dealer||car_dealer_two||car_dealer_two_elementor||car_magazine||car_rental||equipment||listing||listing_one_elementor||listing_two||listing_three||listing_three_elementor||listing_four||listing_four_elementor||listing_five||listing_five_elementor||listing_six
+                                        )
+
+                                    [2] => Array
+                                        (
+                                            [key] => header_show_add_car_button
+                                            [value] => not_empty
+                                        )
+
+                                )
+
+                            [dependencies] => &&
+                            [submenu] => Buttons/Actions
+                        )
+
+                    [header_listing_btn_hover_bg_color] => Array
+                        (
+                            [label] => Hover Background Color
+                            [type] => color
+                            [mode] => background-color
+                            [output] => .stm-layout-header-listing #wrapper #header .header-listing .listing_add_cart:hover > div,
+								body #wrapper .header-help-bar > ul li a.listing_add_cart:hover,
+								.stm-layout-header-car_dealer_two.no_margin #stm-boats-header #header .is-listing .listing_add_cart > div:hover,
+								.stm-layout-header-boats #stm-boats-header #header .is-listing .listing_add_cart > div:hover,
+								.stm-layout-header-car_rental #header .is-listing .listing_add_cart > div:hover,
+								.stm-layout-header-equipment #wrapper #header .listing_add_cart > div:hover,
+								.stm-layout-header-aircrafts #wrapper #header .is-listing .listing_add_cart > div:hover,
+							#wrapper #header .stm-header-right .stm-c-f-add-btn-wrap .add-listing-btn:hover
+                            [value] => #1bc744
+                            [dependency] => Array
+                                (
+                                    [0] => Array
+                                        (
+                                            [key] => header_current_layout
+                                            [value] => listing||listing_one_elementor||listing_two||listing_three||listing_three_elementor||listing_four||listing_four_elementor||listing_five||listing_five_elementor||listing_six
+                                            [section] => general_tab
+                                        )
+
+                                    [1] => Array
+                                        (
+                                            [key] => header_layout
+                                            [value] => aircrafts||boats||equipment||ev_dealer||car_dealer_elementor||car_dealer_elementor_rtl||car_dealer||car_dealer_two||car_dealer_two_elementor||car_magazine||car_rental||equipment||listing||listing_one_elementor||listing_two||listing_three||listing_three_elementor||listing_four||listing_four_elementor||listing_five||listing_five_elementor||listing_six
+                                        )
+
+                                    [2] => Array
+                                        (
+                                            [key] => header_show_add_car_button
+                                            [value] => not_empty
+                                        )
+
+                                )
+
+                            [dependencies] => &&
+                            [submenu] => Buttons/Actions
+                        )
+
+                    [header_listing_btn_text_color] => Array
+                        (
+                            [label] => Text Color
+                            [type] => color
+                            [mode] => color
+                            [output] => .stm-layout-header-listing #wrapper #header .header-listing .listing_add_cart > div,
+							.stm-layout-header-car_dealer .header-help-bar > ul li a .list-label,
+							.stm-layout-header-car_dealer #wrapper #header .header-main .listing_add_cart,
+							#wrapper #stm-boats-header #header .header-inner-content .listing-right-actions a.listing_add_cart div .heading-font,
+							.stm-layout-header-equipment #wrapper #header .listing_add_cart > div .list-label,
+							.stm-layout-header-aircrafts #wrapper #header .is-listing .listing_add_cart > div .list-label,
+							#wrapper #header .stm-header-right .stm-c-f-add-btn-wrap .add-listing-btn
+							
+                            [value] => #ffffff
+                            [dependency] => Array
+                                (
+                                    [0] => Array
+                                        (
+                                            [key] => header_current_layout
+                                            [value] => listing||listing_one_elementor||listing_two||listing_three||listing_three_elementor||listing_four||listing_four_elementor||listing_five||listing_five_elementor||listing_six
+                                            [section] => general_tab
+                                        )
+
+                                    [1] => Array
+                                        (
+                                            [key] => header_layout
+                                            [value] => aircrafts||boats||equipment||ev_dealer||car_dealer_elementor||car_dealer_elementor_rtl||car_dealer||car_dealer_two||car_dealer_two_elementor||car_magazine||equipment||listing||listing_one_elementor||listing_two||listing_three||listing_three_elementor||listing_four||listing_four_elementor||listing_five||listing_five_elementor||listing_six
+                                        )
+
+                                    [2] => Array
+                                        (
+                                            [key] => header_show_add_car_button
+                                            [value] => not_empty
+                                        )
+
+                                )
+
+                            [dependencies] => &&
+                            [style_important] => 1
+                            [submenu] => Buttons/Actions
+                        )
+
+                    [header_listing_btn_hover_text_color] => Array
+                        (
+                            [label] => Hover Text Color
+                            [type] => color
+                            [mode] => color
+                            [output] => .stm-layout-header-listing #wrapper #header .header-listing .listing_add_cart:hover > div,
+						.stm-layout-header-listing #wrapper #header .header-listing .listing_add_cart:hover > div i,
+						.stm-layout-header-car_dealer .header-help-bar > ul li a:hover .list-label,
+						.stm-layout-header-car_dealer #wrapper #header .header-main .listing_add_cart:hover,
+						body #wrapper .header-help-bar > ul > li > a:hover,
+						body #wrapper .header-help-bar > ul > li > a:hover i,
+						body #wrapper .header-help-bar > ul > li > a.listing_add_cart:hover .list-label,
+						#wrapper #stm-boats-header #header .header-inner-content .listing-right-actions a.listing_add_cart:hover .heading-font,
+						#wrapper #stm-boats-header #header .header-inner-content .listing-right-actions a.listing_add_cart:hover i,
+						.stm-layout-header-equipment #wrapper #header .listing_add_cart > div:hover i,
+						.stm-layout-header-equipment #wrapper #header .listing_add_cart > div:hover .list-label,
+						.stm-layout-header-car_rental #header .is-listing .listing_add_cart > div:hover i,
+						.stm-layout-header-aircrafts #wrapper #header .is-listing .listing_add_cart > div:hover i,
+						.stm-layout-header-aircrafts #wrapper #header .is-listing .listing_add_cart > div:hover .list-label,
+						#wrapper #header .stm-header-right .stm-c-f-add-btn-wrap .add-listing-btn:hover,
+						#wrapper #header .stm-header-right .stm-c-f-add-btn-wrap .add-listing-btn:hover i
+                            [value] => #ffffff
+                            [dependency] => Array
+                                (
+                                    [0] => Array
+                                        (
+                                            [key] => header_current_layout
+                                            [value] => listing||listing_one_elementor||listing_two||listing_three||listing_three_elementor||listing_four||listing_four_elementor||listing_five||listing_five_elementor||listing_six
+                                            [section] => general_tab
+                                        )
+
+                                    [1] => Array
+                                        (
+                                            [key] => header_layout
+                                            [value] => aircrafts||boats||equipment||ev_dealer||car_dealer_elementor||car_dealer_elementor_rtl||car_dealer||car_dealer_two||car_dealer_two_elementor||car_magazine||car_rental||equipment||listing||listing_one_elementor||listing_two||listing_three||listing_three_elementor||listing_four||listing_four_elementor||listing_five||listing_five_elementor||listing_six
+                                        )
+
+                                    [2] => Array
+                                        (
+                                            [key] => header_show_add_car_button
+                                            [value] => not_empty
+                                        )
+
+                                )
+
+                            [dependencies] => &&
+                            [style_important] => 1
+                            [submenu] => Buttons/Actions
+                        )
+
+                    [header_listing_btn_icon] => Array
+                        (
+                            [label] => Icon
+                            [type] => icon_picker
+                            [group] => ended
+                            [dependency] => Array
+                                (
+                                    [0] => Array
+                                        (
+                                            [key] => header_current_layout
+                                            [value] => listing||listing_one_elementor||listing_two||listing_three||listing_three_elementor||listing_four||listing_four_elementor||listing_five||listing_five_elementor||listing_six
+                                            [section] => general_tab
+                                        )
+
+                                    [1] => Array
+                                        (
+                                            [key] => header_layout
+                                            [value] => aircrafts||boats||equipment||ev_dealer||car_dealer_elementor||car_dealer_elementor_rtl||car_dealer||car_dealer_two||car_dealer_two_elementor||car_magazine||car_rental||equipment||listing||listing_one_elementor||listing_two||listing_three||listing_three_elementor||listing_four||listing_four_elementor||listing_five||listing_five_elementor||listing_six
+                                        )
+
+                                    [2] => Array
+                                        (
+                                            [key] => header_show_add_car_button
+                                            [value] => not_empty
+                                        )
+
+                                )
+
+                            [dependencies] => &&
+                            [submenu] => Buttons/Actions
+                        )
+
+                    [hma_search_button] => Array
+                        (
+                            [label] => Show Search Button
+                            [type] => checkbox
+                            [group] => started
+                            [dependency] => Array
+                                (
+                                    [key] => header_layout
+                                    [value] => car_dealer_elementor||car_dealer_elementor_rtl||car_dealer
+                                )
+
+                            [submenu] => Buttons/Actions
+                        )
+
+                    [hma_search_button_icon] => Array
+                        (
+                            [label] => Search Button Icon
+                            [type] => icon_picker
+                            [dependency] => Array
+                                (
+                                    [0] => Array
+                                        (
+                                            [key] => header_layout
+                                            [value] => car_dealer_elementor||car_dealer_elementor_rtl||car_dealer
+                                        )
+
+                                    [1] => Array
+                                        (
+                                            [key] => hma_search_button
+                                            [value] => not_empty
+                                        )
+
+                                )
+
+                            [dependencies] => &&
+                            [submenu] => Buttons/Actions
+                        )
+
+                    [hma_search_button_hover_color] => Array
+                        (
+                            [label] => Search Button Hover Background Color
+                            [type] => color
+                            [mode] => Array
+                                (
+                                    [0] => background-color
+                                    [1] => border-color
+                                )
+
+                            [output] => 
+							#header-nav-holder .header-help-bar > ul li.nav-search:hover > a,
+							#header-nav-holder .header-help-bar > ul li.nav-search > a:hover
+							
+                            [dependency] => Array
+                                (
+                                    [0] => Array
+                                        (
+                                            [key] => header_layout
+                                            [value] => car_dealer_elementor||car_dealer_elementor_rtl||car_dealer
+                                        )
+
+                                    [1] => Array
+                                        (
+                                            [key] => hma_search_button
+                                            [value] => not_empty
+                                        )
+
+                                )
+
+                            [dependencies] => &&
+                            [submenu] => Buttons/Actions
+                        )
+
+                    [hma_search_button_hover_icon_color] => Array
+                        (
+                            [label] => Search Button Hover Icon Color
+                            [type] => color
+                            [mode] => color
+                            [output] => 
+							#header-nav-holder .header-help-bar > ul li.nav-search:hover > a i,
+							#header-nav-holder .header-help-bar > ul li.nav-search > a:hover i
+							
+                            [style_important] => 1
+                            [value] => #ffffff
+                            [group] => ended
+                            [dependency] => Array
+                                (
+                                    [0] => Array
+                                        (
+                                            [key] => header_layout
+                                            [value] => car_dealer_elementor||car_dealer_elementor_rtl||car_dealer
+                                        )
+
+                                    [1] => Array
+                                        (
+                                            [key] => hma_search_button
+                                            [value] => not_empty
+                                        )
+
+                                )
+
+                            [dependencies] => &&
+                            [submenu] => Buttons/Actions
+                        )
+
+                    [service_header_label] => Array
+                        (
+                            [label] => Header Button label
+                            [type] => text
+                            [value] => Make an Appointment
+                            [dependency] => Array
+                                (
+                                    [key] => header_current_layout
+                                    [value] => service
+                                    [section] => general_tab
+                                )
+
+                            [submenu] => Buttons/Actions
+                        )
+
+                    [service_header_link] => Array
+                        (
+                            [label] => Header Button Link
+                            [type] => text
+                            [value] => #appointment-form
+                            [dependency] => Array
+                                (
+                                    [key] => header_current_layout
+                                    [value] => service
+                                    [section] => general_tab
+                                )
+
+                            [submenu] => Buttons/Actions
+                        )
+
+                    [rental_btns_empty_notice] => Array
+                        (
+                            [label] => Settings Not Available For This Header Type
+                            [type] => notice
+                            [dependency] => Array
+                                (
+                                    [key] => header_current_layout
+                                    [value] => car_rental
+                                    [section] => general_tab
+                                )
+
+                            [submenu] => Buttons/Actions
+                        )
+
+                    [header_socials_enable] => Array
+                        (
+                            [label] => Header Socials
+                            [type] => multi_checkbox
+                            [options] => Array
+                                (
+                                    [facebook] => Facebook
+                                    [twitter] => Twitter
+                                    [vk] => VK
+                                    [instagram] => Instagram
+                                    [behance] => Behance
+                                    [dribbble] => Dribbble
+                                    [flickr] => Flickr
+                                    [git] => Git
+                                    [linkedin] => Linkedin
+                                    [pinterest] => Pinterest
+                                    [yahoo] => Yahoo
+                                    [delicious] => Delicious
+                                    [dropbox] => Dropbox
+                                    [reddit] => Reddit
+                                    [soundcloud] => Soundcloud
+                                    [google] => Google
+                                    [google-plus] => Google +
+                                    [skype] => Skype
+                                    [youtube] => Youtube
+                                    [youtube-play] => Youtube Play
+                                    [tumblr] => Tumblr
+                                    [whatsapp] => Whatsapp
+                                )
+
+                            [dependency] => Array
+                                (
+                                    [key] => header_layout
+                                    [value] => car_dealer_elementor||car_dealer_elementor_rtl||car_dealer||car_magazine||listing_four||listing_four_elementor||motorcycle
+                                )
+
+                            [submenu] => Socials
+                        )
+
+                    [soc_empty_notice] => Array
+                        (
+                            [label] => Settings Not Available For This Header Type
+                            [type] => notice
+                            [dependency] => Array
+                                (
+                                    [key] => header_layout
+                                    [value] => ev_dealer||car_dealer_two||car_dealer_two_elementor||aircrafts||boats||equipment||listing||listing_one_elementor||listing_two||listing_three||listing_three_elementor||listing_five||car_rental||service
+                                )
+
+                            [submenu] => Socials
+                        )
+
+                )
+
+        )
+
+    [blog_conf] => Array
+        (
+            [name] => Blog page
+            [fields] => Array
+                (
+                    [view_type] => Array
+                        (
+                            [label] => Blog Archive Page Layout
+                            [type] => radio
+                            [options] => Array
+                                (
+                                    [grid] => Grid
+                                    [list] => List
+                                )
+
+                            [value] => grid
+                        )
+
+                    [sidebar] => Array
+                        (
+                            [label] => Archive Page Sidebar
+                            [type] => select
+                            [options] => Array
+                                (
+                                    [no_sidebar] => Without sidebar
+                                    [default] => Primary sidebar
+                                    [92458] => Dealer
+                                    [shop] => Shop
+                                    [stm_listing_car] => STM Listing Car Sidebar
+                                )
+
+                            [value] => default
+                        )
+
+                    [sidebar_blog] => Array
+                        (
+                            [label] => Blog Post Sidebar
+                            [type] => select
+                            [options] => Array
+                                (
+                                    [no_sidebar] => Without sidebar
+                                    [default] => Primary sidebar
+                                    [92458] => Dealer
+                                    [shop] => Shop
+                                    [stm_listing_car] => STM Listing Car Sidebar
+                                )
+
+                            [value] => default
+                        )
+
+                    [sidebar_position] => Array
+                        (
+                            [label] => Sidebar Position
+                            [type] => radio
+                            [options] => Array
+                                (
+                                    [left] => Left
+                                    [right] => Right
+                                )
+
+                            [value] => right
+                        )
+
+                    [blog_show_excerpt] => Array
+                        (
+                            [label] => Show Excerpt (for Grid View)
+                            [type] => checkbox
+                            [dependency] => Array
+                                (
+                                    [key] => header_current_layout
+                                    [value] => aircrafts||boats||ev_dealer||car_dealer_elementor||car_dealer_elementor_rtl||car_dealer||car_dealer_two||car_dealer_two_elementor||equipment||listing||listing_one_elementor||listing_two||listing_three||listing_three_elementor||listing_four||listing_four_elementor||motorcycle
+                                    [section] => general_tab
+                                )
+
+                        )
+
+                )
+
+        )
+
+    [stm_review_settings] => Array
+        (
+            [name] => Stm Review Settings
+            [fields] => Array
+                (
+                    [review_archive_paginatin_style] => Array
+                        (
+                            [label] => Review pagination type
+                            [type] => select
+                            [options] => Array
+                                (
+                                    [pagination] => Pagination
+                                    [load_more] => Load More Button
+                                )
+
+                            [value] => pagination
+                        )
+
+                    [review_per_page] => Array
+                        (
+                            [label] => Review per page
+                            [type] => text
+                            [value] => 6
+                        )
+
+                )
+
+        )
+
+    [inventory_settings] => Array
+        (
+            [name] => Inventory settings
+            [fields] => Array
+                (
+                    [gallery_hover_interaction] => Array
+                        (
+                            [label] => Gallery Interaction on Hover
+                            [description] => See all the images in the gallery simply by hovering on the photo
+                            [type] => checkbox
+                            [submenu] => Main
+                            [dependency] => Array
+                                (
+                                    [key] => header_current_layout
+                                    [value] => car_magazine||ev_dealer||car_dealer_elementor||car_dealer_elementor_rtl||car_dealer||car_dealer_two||car_dealer_two_elementor||listing||listing_one_elementor||listing_two||listing_three||listing_three_elementor||listing_four||listing_four_elementor||listing_five||aircrafts||motorcycle||boats||equipment
+                                    [section] => general_tab
+                                )
+
+                        )
+
+                    [classic_listing_title] => Array
+                        (
+                            [label] => Listing Archive &quot;Title Box&quot; Title
+                            [type] => text
+                            [value] => Inventory
+                            [dependency] => Array
+                                (
+                                    [key] => header_current_layout
+                                    [value] => aircrafts||boats||car_dealer_two||car_dealer_two_elementor||car_magazine||listing||listing_one_elementor||listing_two||listing_three||listing_three_elementor||listing_four||listing_four_elementor||listing_five||listing_six||motorcycle
+                                    [section] => general_tab
+                                )
+
+                            [submenu] => Main
+                        )
+
+                    [hide_price_labels] => Array
+                        (
+                            [label] => Hide Price Labels on Listing Archive
+                            [type] => checkbox
+                            [dependency] => Array
+                                (
+                                    [key] => header_current_layout
+                                    [value] => aircrafts||car_dealer_two||car_dealer_two_elementor||car_magazine||listing||listing_one_elementor||listing_two||listing_three||listing_three_elementor||listing_four||listing_four_elementor||listing_five||listing_six
+                                    [section] => general_tab
+                                )
+
+                            [submenu] => Main
+                        )
+
+                    [listing_directory_title_default] => Array
+                        (
+                            [label] => Default Title
+                            [type] => text
+                            [value] => Cars for sale
+                            [dependency] => Array
+                                (
+                                    [key] => header_current_layout
+                                    [value] => aircrafts||car_dealer_two||car_dealer_two_elementor||car_magazine||listing||listing_one_elementor||listing_two||listing_three||listing_three_elementor||listing_four||listing_four_elementor||listing_five||listing_six||motorcycle
+                                    [section] => general_tab
+                                )
+
+                            [submenu] => Main
+                        )
+
+                    [inventory_layout] => Array
+                        (
+                            [label] => Inventory Layout Mode
+                            [type] => radio
+                            [options] => Array
+                                (
+                                    [light] => Light
+                                    [dark] => Dark
+                                )
+
+                            [value] => dark
+                            [dependency] => Array
+                                (
+                                    [key] => header_current_layout
+                                    [value] => car_dealer_two
+                                    [section] => general_tab
+                                )
+
+                            [submenu] => Main
+                        )
+
+                    [listing_archive] => Array
+                        (
+                            [label] => Inventory Archive Page
+                            [type] => select
+                            [description] => Choose listing archive page
+                            [options] => Array
+                                (
+                                    [0] => --- Default ---
+                                    [98136] => Kontakt os
+                                    [97806] => Forsikringsberegner
+                                    [97756] => Dokumenter
+                                    [97725] => user cars
+                                    [97376] => Forhandler Forside
+                                    [97362] => 7
+                                    [97315] => Video uploader
+                                    [96804] => Vurdering
+                                    [96790] => Opret køretøj
+                                    [96763] => Køretøj
+                                    [96746] => Forhandler
+                                    [96618] => Slutseddel
+                                    [96586] => BILER TIL SALG​ LEASING
+                                    [96405] => pdffiles
+                                    [96197] => Autoconcept
+                                    [96196] => CarGarantie
+                                    [96173] => PRIVATLIVSPOLITIK
+                                    [96164] => HANDELSBETINGELSER
+                                    [96101] => WISEBIKE PRISLISTE BASIS
+                                    [96090] => ATV
+                                    [95480] => WISECAMPER PRISLISTE BRONZE
+                                    [95475] => WISECAMPER PRISLISTE SØLV
+                                    [95467] => WISECAMPER PRISLISTE GULD
+                                    [95400] => ELECTRIC DRIVE PRISLISTE
+                                    [95386] => WISECARAVAN PRISLISTE &#8211; SØLV
+                                    [94955] => Add byttebil
+                                    [94953] => Alle byttebiler
+                                    [94268] => POINT 1
+                                    [94165] => calculate_sell_price
+                                    [93818] => ELECTRIC DRIVE PRISLISTE
+                                    [93801] => ELECTRIC DRIVE
+                                    [93757] => Add new item
+                                    [93740] => Add a MC/ATV
+                                    [93741] => MC/ATV til salg
+                                    [93729] => Autocamper til salg
+                                    [93728] => Add a Motor
+                                    [93628] => Campingvogne til salg
+                                    [93719] => Add a Caravan
+                                    [93333] => WISEBIKE PRISLISTE GOLD
+                                    [93325] => WISEATV PRISLISTE
+                                    [93317] => WISECARAVAN PRISLISTE &#8211; GULD
+                                    [93299] => WISECAMPER PRISLISTE NYBIL
+                                    [93288] => POINT BASIS PRISLISTE
+                                    [93277] => POINT BRONZE PRISLISTE
+                                    [93266] => BASIS 100 PRISLISTE
+                                    [93258] => COMFORT 100 PRISLISTE
+                                    [93250] => COMFORT PLUS 100 PRISLISTE
+                                    [93242] => COMFORT PLUS 150 PRISLISTE
+                                    [93230] => COMFORT PLUS 150
+                                    [93222] => COMFORT PLUS 100
+                                    [93199] => COMFORT 100
+                                    [93177] => BASIS 100​
+                                    [93168] => POINT BASIS
+                                    [93159] => POINT BRONZE
+                                    [93150] => WISECAMPER BRONZE
+                                    [93144] => WISECAMPER SØLV
+                                    [93138] => WISECAMPER GULD
+                                    [93129] => WISECAMPER NYBIL
+                                    [93074] => WISEBIKER
+                                    [93065] => WISEBIKER GOLD
+                                    [93053] => WISECARAVAN SØLV
+                                    [93044] => WISECARAVAN GULD
+                                    [93018] => WISEATV GOLD
+                                    [92995] => KEY PROTECT
+                                    [93000] => CAR RENTAL
+                                    [92985] => ROAD ASSIST
+                                    [92967] => MC
+                                    [92945] => Campingvogn
+                                    [92935] => Autocamper
+                                    [92883] => SAFE Garanti
+                                    [92882] => Bil
+                                    [92880] => Salgsmetode
+                                    [92867] => DBA &#038; Bilbasen
+                                    [92840] => Annoncering
+                                    [92838] => PointBiler
+                                    [92826] => POINT 3
+                                    [92817] => POINT 2
+                                    [92804] => ONLINE VURDERING
+                                    [11] => Min Konto
+                                    [10] => Kasse
+                                    [9] => Kurv
+                                    [8] => Shop
+                                    [2] => Eksempelside
+                                    [92553] => My account
+                                    [92552] => Checkout
+                                    [92551] => Cart
+                                    [92550] => Shop
+                                    [92549] => Sample Page
+                                    [91484] => Refund and Returns Policy
+                                    [2118] => Motion effects test
+                                    [2157] => Dealers list
+                                    [2144] => Compare
+                                    [2085] => FAQ
+                                    [2080] => Contact Us
+                                    [2067] => About Us
+                                    [1755] => Add a Car
+                                    [1718] => Login/Register
+                                    [1678] => Pricing
+                                    [1640] => News
+                                    [1637] => BILER TIL SALG​
+                                    [92470] => 
+                                )
+
+                            [submenu] => Main
+                        )
+
+                    [listing_boat_filter] => Array
+                        (
+                            [label] => Use Boats Filter Style
+                            [type] => checkbox
+                            [dependency] => Array
+                                (
+                                    [key] => header_current_layout
+                                    [value] => boats
+                                    [section] => general_tab
+                                )
+
+                            [submenu] => Main
+                        )
+
+                    [listing_list_sort_slug] => Array
+                        (
+                            [label] => List Version Sort Parameter (Type Slug)
+                            [type] => text
+                            [value] => make
+                            [dependency] => Array
+                                (
+                                    [key] => header_current_layout
+                                    [value] => boats
+                                    [section] => general_tab
+                                )
+
+                            [submenu] => Main
+                        )
+
+                    [listing_grid_choices] => Array
+                        (
+                            [label] => Items Per Page Choices.
+                            [type] => text
+                            [value] => 9,12,18,27
+                            [dependency] => Array
+                                (
+                                    [key] => header_current_layout
+                                    [value] => boats
+                                    [section] => general_tab
+                                )
+
+                            [description] => Grid version. Ex: 9,12,18,27
+                            [submenu] => Main
+                        )
+
+                    [compare_page] => Array
+                        (
+                            [label] => Compare Page
+                            [type] => select
+                            [description] => Choose landing page for compare
+                            [options] => Array
+                                (
+                                    [0] => --- Default ---
+                                    [98136] => Kontakt os
+                                    [97806] => Forsikringsberegner
+                                    [97756] => Dokumenter
+                                    [97725] => user cars
+                                    [97376] => Forhandler Forside
+                                    [97362] => 7
+                                    [97315] => Video uploader
+                                    [96804] => Vurdering
+                                    [96790] => Opret køretøj
+                                    [96763] => Køretøj
+                                    [96746] => Forhandler
+                                    [96618] => Slutseddel
+                                    [96586] => BILER TIL SALG​ LEASING
+                                    [96405] => pdffiles
+                                    [96197] => Autoconcept
+                                    [96196] => CarGarantie
+                                    [96173] => PRIVATLIVSPOLITIK
+                                    [96164] => HANDELSBETINGELSER
+                                    [96101] => WISEBIKE PRISLISTE BASIS
+                                    [96090] => ATV
+                                    [95480] => WISECAMPER PRISLISTE BRONZE
+                                    [95475] => WISECAMPER PRISLISTE SØLV
+                                    [95467] => WISECAMPER PRISLISTE GULD
+                                    [95400] => ELECTRIC DRIVE PRISLISTE
+                                    [95386] => WISECARAVAN PRISLISTE &#8211; SØLV
+                                    [94955] => Add byttebil
+                                    [94953] => Alle byttebiler
+                                    [94268] => POINT 1
+                                    [94165] => calculate_sell_price
+                                    [93818] => ELECTRIC DRIVE PRISLISTE
+                                    [93801] => ELECTRIC DRIVE
+                                    [93757] => Add new item
+                                    [93740] => Add a MC/ATV
+                                    [93741] => MC/ATV til salg
+                                    [93729] => Autocamper til salg
+                                    [93728] => Add a Motor
+                                    [93628] => Campingvogne til salg
+                                    [93719] => Add a Caravan
+                                    [93333] => WISEBIKE PRISLISTE GOLD
+                                    [93325] => WISEATV PRISLISTE
+                                    [93317] => WISECARAVAN PRISLISTE &#8211; GULD
+                                    [93299] => WISECAMPER PRISLISTE NYBIL
+                                    [93288] => POINT BASIS PRISLISTE
+                                    [93277] => POINT BRONZE PRISLISTE
+                                    [93266] => BASIS 100 PRISLISTE
+                                    [93258] => COMFORT 100 PRISLISTE
+                                    [93250] => COMFORT PLUS 100 PRISLISTE
+                                    [93242] => COMFORT PLUS 150 PRISLISTE
+                                    [93230] => COMFORT PLUS 150
+                                    [93222] => COMFORT PLUS 100
+                                    [93199] => COMFORT 100
+                                    [93177] => BASIS 100​
+                                    [93168] => POINT BASIS
+                                    [93159] => POINT BRONZE
+                                    [93150] => WISECAMPER BRONZE
+                                    [93144] => WISECAMPER SØLV
+                                    [93138] => WISECAMPER GULD
+                                    [93129] => WISECAMPER NYBIL
+                                    [93074] => WISEBIKER
+                                    [93065] => WISEBIKER GOLD
+                                    [93053] => WISECARAVAN SØLV
+                                    [93044] => WISECARAVAN GULD
+                                    [93018] => WISEATV GOLD
+                                    [92995] => KEY PROTECT
+                                    [93000] => CAR RENTAL
+                                    [92985] => ROAD ASSIST
+                                    [92967] => MC
+                                    [92945] => Campingvogn
+                                    [92935] => Autocamper
+                                    [92883] => SAFE Garanti
+                                    [92882] => Bil
+                                    [92880] => Salgsmetode
+                                    [92867] => DBA &#038; Bilbasen
+                                    [92840] => Annoncering
+                                    [92838] => PointBiler
+                                    [92826] => POINT 3
+                                    [92817] => POINT 2
+                                    [92804] => ONLINE VURDERING
+                                    [11] => Min Konto
+                                    [10] => Kasse
+                                    [9] => Kurv
+                                    [8] => Shop
+                                    [2] => Eksempelside
+                                    [92553] => My account
+                                    [92552] => Checkout
+                                    [92551] => Cart
+                                    [92550] => Shop
+                                    [92549] => Sample Page
+                                    [91484] => Refund and Returns Policy
+                                    [2118] => Motion effects test
+                                    [2157] => Dealers list
+                                    [2144] => Compare
+                                    [2085] => FAQ
+                                    [2080] => Contact Us
+                                    [2067] => About Us
+                                    [1755] => Add a Car
+                                    [1718] => Login/Register
+                                    [1678] => Pricing
+                                    [1640] => News
+                                    [1637] => BILER TIL SALG​
+                                    [92470] => 
+                                )
+
+                            [value] => 156
+                            [submenu] => Main
+                        )
+
+                    [listing_view_type] => Array
+                        (
+                            [label] => Listing View Type
+                            [type] => radio
+                            [options] => Array
+                                (
+                                    [grid] => Grid
+                                    [list] => List
+                                )
+
+                            [dependency] => Array
+                                (
+                                    [key] => header_current_layout
+                                    [value] => aircrafts||boats||ev_dealer||car_dealer_elementor||car_dealer_elementor_rtl||car_dealer||car_dealer_two||car_dealer_two_elementor||car_magazine||listing||listing_one_elementor||listing_two||listing_three||listing_three_elementor||listing_four||listing_four_elementor||listing_five||listing_six||motorcycle
+                                    [section] => general_tab
+                                )
+
+                            [value] => list
+                            [submenu] => Main
+                        )
+
+                    [enable_search] => Array
+                        (
+                            [label] => Bind WP Search form with Inventory
+                            [type] => checkbox
+                            [submenu] => Main
+                        )
+
+                    [enable_features_search] => Array
+                        (
+                            [label] => Display Additional Features on Inventory Filter
+                            [type] => checkbox
+                            [dependency] => Array
+                                (
+                                    [key] => header_current_layout
+                                    [value] => ev_dealer||car_dealer_elementor||car_dealer||car_dealer_two||car_dealer_two_elementor||car_magazine||listing||listing_one_elementor||listing_two||listing_three||listing_three_elementor||listing_four||listing_four_elementor||listing_five||listing_six||motorcycle
+                                    [section] => general_tab
+                                )
+
+                            [submenu] => Main
+                        )
+
+                    [enable_favorite_items] => Array
+                        (
+                            [label] => Enable Favorite Button
+                            [type] => checkbox
+                            [dependency] => Array
+                                (
+                                    [key] => header_current_layout
+                                    [value] => listing||listing_one_elementor||listing_two||listing_three||listing_three_elementor||listing_four||listing_four_elementor||listing_five||listing_six
+                                    [section] => general_tab
+                                )
+
+                            [submenu] => Main
+                        )
+
+                    [sort_options] => Array
+                        (
+                            [label] => Sort Options
+                            [submenu] => Main
+                            [type] => multi_checkbox
+                            [options] => Array
+                                (
+                                    [modelar-car] => Model År
+                                    [kk-car] => Kørte KM
+                                    [hestekrafter-car] => Hestekræfter
+                                    [rakkevidde-car] => Rækkevidde
+                                    [antal-dore-car] => Antal Døre
+                                    [km-stand-tandremskift] => KM stand Tandremskift
+                                    [egenvagt-car] => Egenvægt
+                                    [totalvagt-car] => Totalvægt
+                                    [groenejerafgift-6-mdr] => Grønejerafgift 6 mdr.
+                                    [restgald-car] => Restgæld
+                                    [restvaerdi] => Restværdi
+                                    [totalpris-i-loebetiden] => Totalpris i løbetiden
+                                    [aarlig-koersel] => Årlig kørsel
+                                    [foerstegangsydelse] => Førstegangsydelse
+                                )
+
+                            [dependency] => Array
+                                (
+                                    [key] => header_current_layout
+                                    [value] => aircrafts||boats||ev_dealer||car_dealer_elementor||car_dealer||car_dealer_two||car_dealer_two_elementor||car_magazine||listing||listing_one_elementor||listing_two||listing_three||listing_three_elementor||listing_four||listing_four_elementor||listing_five||listing_six||motorcycle
+                                    [section] => general_tab
+                                )
+
+                        )
+
+                    [default_sort_by] => Array
+                        (
+                            [label] => Default Sort Option
+                            [type] => select
+                            [value] => date_high
+                            [options] => Array
+                                (
+                                    [date_high] => Date: newest first
+                                    [date_low] => Date: oldest first
+                                    [modelar-car_high] => Model År: highest first
+                                    [modelar-car_low] => Model År: lowest first
+                                    [kk-car_high] => Kørte KM: highest first
+                                    [kk-car_low] => Kørte KM: lowest first
+                                    [hestekrafter-car_high] => Hestekræfter: highest first
+                                    [hestekrafter-car_low] => Hestekræfter: lowest first
+                                    [rakkevidde-car_high] => Rækkevidde: highest first
+                                    [rakkevidde-car_low] => Rækkevidde: lowest first
+                                    [antal-dore-car_high] => Antal Døre: highest first
+                                    [antal-dore-car_low] => Antal Døre: lowest first
+                                    [km-stand-tandremskift_high] => KM stand Tandremskift: highest first
+                                    [km-stand-tandremskift_low] => KM stand Tandremskift: lowest first
+                                    [egenvagt-car_high] => Egenvægt: highest first
+                                    [egenvagt-car_low] => Egenvægt: lowest first
+                                    [totalvagt-car_high] => Totalvægt: highest first
+                                    [totalvagt-car_low] => Totalvægt: lowest first
+                                    [groenejerafgift-6-mdr_high] => Grønejerafgift 6 mdr.: highest first
+                                    [groenejerafgift-6-mdr_low] => Grønejerafgift 6 mdr.: lowest first
+                                    [restgald-car_high] => Restgæld: highest first
+                                    [restgald-car_low] => Restgæld: lowest first
+                                    [restvaerdi_high] => Restværdi: highest first
+                                    [restvaerdi_low] => Restværdi: lowest first
+                                    [totalpris-i-loebetiden_high] => Totalpris i løbetiden: highest first
+                                    [totalpris-i-loebetiden_low] => Totalpris i løbetiden: lowest first
+                                    [aarlig-koersel_high] => Årlig kørsel: highest first
+                                    [aarlig-koersel_low] => Årlig kørsel: lowest first
+                                    [foerstegangsydelse_high] => Førstegangsydelse: highest first
+                                    [foerstegangsydelse_low] => Førstegangsydelse: lowest first
+                                )
+
+                            [description] => Default option must be selected above
+                            [dependency] => Array
+                                (
+                                    [key] => header_current_layout
+                                    [value] => aircrafts||boats||ev_dealer||car_dealer_elementor||car_dealer||car_dealer_two||car_dealer_two_elementor||car_magazine||listing||listing_one_elementor||listing_two||listing_three||listing_three_elementor||listing_four||listing_four_elementor||listing_five||listing_six||motorcycle
+                                    [section] => general_tab
+                                )
+
+                            [submenu] => Main
+                        )
+
+                    [price_currency_name] => Array
+                        (
+                            [label] => Price Currency Name
+                            [type] => text
+                            [value] => USD
+                            [submenu] => Price
+                        )
+
+                    [price_currency] => Array
+                        (
+                            [label] => Price Currency
+                            [type] => text
+                            [value] => $
+                            [submenu] => Price
+                        )
+
+                    [price_currency_position] => Array
+                        (
+                            [label] => Price Currency Position
+                            [type] => select
+                            [options] => Array
+                                (
+                                    [left] => Left
+                                    [right] => Right
+                                )
+
+                            [value] => left
+                            [submenu] => Price
+                        )
+
+                    [price_delimeter] => Array
+                        (
+                            [label] => Price Delimeter
+                            [type] => text
+                            [value] =>  
+                            [submenu] => Price
+                        )
+
+                    [currency_list] => Array
+                        (
+                            [label] => Multiple Currencies
+                            [description] => Conversion Rate should be delimited by dot (example: 1.2)
+                            [type] => repeater
+                            [load_labels] => Array
+                                (
+                                    [add_label] => Add Currency
+                                )
+
+                            [fields] => Array
+                                (
+                                    [currency] => Array
+                                        (
+                                            [type] => text
+                                            [label] => Currency
+                                        )
+
+                                    [symbol] => Array
+                                        (
+                                            [type] => text
+                                            [label] => Symbol
+                                        )
+
+                                    [to] => Array
+                                        (
+                                            [type] => text
+                                            [label] => Conversion Rate
+                                        )
+
+                                )
+
+                            [submenu] => Price
+                        )
+
+                    [enable_location] => Array
+                        (
+                            [label] => Show Location/Include Location in Filter
+                            [type] => checkbox
+                            [submenu] => Filter by location
+                            [dependency] => Array
+                                (
+                                    [key] => header_current_layout
+                                    [value] => boats||ev_dealer||car_dealer_elementor||car_dealer||car_dealer_two||car_dealer_two_elementor||car_magazine||listing||listing_one_elementor||listing_two||listing_three||listing_three_elementor||listing_four||listing_four_elementor||listing_five
+                                    [section] => general_tab
+                                )
+
+                        )
+
+                    [distance_measure_unit] => Array
+                        (
+                            [label] => Unit Measurement
+                            [type] => select
+                            [options] => Array
+                                (
+                                    [miles] => Miles
+                                    [kilometers] => Kilometers
+                                )
+
+                            [dependency] => Array
+                                (
+                                    [0] => Array
+                                        (
+                                            [key] => header_current_layout
+                                            [value] => boats||ev_dealer||car_dealer_elementor||car_dealer||car_dealer_two||car_dealer_two_elementor||car_magazine||listing||listing_one_elementor||listing_two||listing_three||listing_three_elementor||listing_four||listing_four_elementor||listing_five||listing_six
+                                            [section] => general_tab
+                                        )
+
+                                    [1] => Array
+                                        (
+                                            [key] => enable_location
+                                            [value] => not_empty
+                                        )
+
+                                )
+
+                            [dependencies] => &&
+                            [submenu] => Filter by location
+                        )
+
+                    [distance_search] => Array
+                        (
+                            [label] => Set Max Search Radius
+                            [type] => text
+                            [dependency] => Array
+                                (
+                                    [0] => Array
+                                        (
+                                            [key] => header_current_layout
+                                            [value] => boats||ev_dealer||car_dealer_elementor||car_dealer||car_dealer_two||car_dealer_two_elementor||car_magazine||listing||listing_one_elementor||listing_two||listing_three||listing_three_elementor||listing_four||listing_four_elementor||listing_five||listing_six
+                                            [section] => general_tab
+                                        )
+
+                                    [1] => Array
+                                        (
+                                            [key] => enable_location
+                                            [value] => not_empty
+                                        )
+
+                                )
+
+                            [dependencies] => &&
+                            [submenu] => Filter by location
+                        )
+
+                    [location_empty_notice] => Array
+                        (
+                            [label] => Settings Not Available For This Layout
+                            [type] => notice
+                            [dependency] => Array
+                                (
+                                    [key] => header_current_layout
+                                    [value] => aircrafts||equipment
+                                    [section] => general_tab
+                                )
+
+                            [submenu] => Filter by location
+                        )
+
+                    [listing_directory_title_frontend] => Array
+                        (
+                            [label] => Display Generated Car Title as:
+                            [type] => text
+                            [value] => {make} {serie} {ca-year}
+                            [description] => &quot;Put in curly brackets slug of taxonomy. For Example - {make} {serie} {ca-year}. Leave empty if you want to display value car title.&quot;
+                            [submenu] => Grid/List Card
+                        )
+
+                    [grid_title_max_length] => Array
+                        (
+                            [label] => Grid Item Title Max Length
+                            [type] => text
+                            [value] => 44
+                            [dependency] => Array
+                                (
+                                    [key] => listing_view_type
+                                    [value] => grid
+                                )
+
+                            [submenu] => Grid/List Card
+                        )
+
+                    [show_generated_title_as_label] => Array
+                        (
+                            [label] => Show Two First Parameters as a Badge
+                            [type] => checkbox
+                            [description] => Archive Page and Single Listing
+                            [dependency] => Array
+                                (
+                                    [0] => Array
+                                        (
+                                            [key] => header_current_layout
+                                            [value] => aircrafts||car_dealer_two||car_dealer_two_elementor||car_magazine||listing||listing_one_elementor||listing_two||listing_three||listing_three_elementor||listing_four||listing_four_elementor||listing_five||listing_six||motorcycle
+                                            [section] => general_tab
+                                        )
+
+                                    [1] => Array
+                                        (
+                                            [key] => listing_view_type
+                                            [value] => list
+                                        )
+
+                                )
+
+                            [dependencies] => &&
+                            [submenu] => Grid/List Card
+                        )
+
+                    [listing_directory_enable_dealer_info] => Array
+                        (
+                            [label] => Enable Dealer Info on Listing
+                            [type] => checkbox
+                            [dependency] => Array
+                                (
+                                    [0] => Array
+                                        (
+                                            [key] => header_current_layout
+                                            [value] => listing||listing_one_elementor||listing_two||listing_three||listing_three_elementor||listing_four||listing_four_elementor||listing_five||listing_six||aircrafts
+                                            [section] => general_tab
+                                        )
+
+                                    [1] => Array
+                                        (
+                                            [key] => listing_view_type
+                                            [value] => list
+                                        )
+
+                                )
+
+                            [dependencies] => &&
+                            [submenu] => Grid/List Card
+                        )
+
+                    [show_listing_stock] => Array
+                        (
+                            [label] => Show Stock
+                            [type] => checkbox
+                            [dependency] => Array
+                                (
+                                    [0] => Array
+                                        (
+                                            [key] => header_current_layout
+                                            [value] => ev_dealer||car_dealer_elementor||car_dealer||car_dealer_two||car_dealer_two_elementor||car_magazine||listing||listing_one_elementor||listing_two||listing_three||listing_three_elementor||listing_four||listing_four_elementor||listing_five||listing_six||motorcycle
+                                            [section] => general_tab
+                                        )
+
+                                    [1] => Array
+                                        (
+                                            [key] => listing_view_type
+                                            [value] => list
+                                        )
+
+                                )
+
+                            [dependencies] => &&
+                            [submenu] => Grid/List Card
+                        )
+
+                    [show_listing_test_drive] => Array
+                        (
+                            [label] => Show Test Drive Schedule
+                            [type] => checkbox
+                            [dependency] => Array
+                                (
+                                    [0] => Array
+                                        (
+                                            [key] => header_current_layout
+                                            [value] => aircrafts||ev_dealer||car_dealer_elementor||car_dealer||car_dealer_two||car_dealer_two_elementor||car_magazine||listing||listing_one_elementor||listing_two||listing_three||listing_three_elementor||listing_four||listing_four_elementor||listing_five||listing_six||motorcycle
+                                            [section] => general_tab
+                                        )
+
+                                    [1] => Array
+                                        (
+                                            [key] => listing_view_type
+                                            [value] => list
+                                        )
+
+                                )
+
+                            [dependencies] => &&
+                            [submenu] => Grid/List Card
+                        )
+
+                    [show_listing_compare] => Array
+                        (
+                            [label] => Show Compare
+                            [type] => checkbox
+                            [dependency] => Array
+                                (
+                                    [key] => header_current_layout
+                                    [value] => aircrafts||boats||ev_dealer||car_dealer_elementor||car_dealer||car_dealer_two||car_dealer_two_elementor||car_magazine||listing||listing_one_elementor||listing_two||listing_three||listing_three_elementor||listing_four||listing_four_elementor||listing_five||listing_six||motorcycle||equipment
+                                    [section] => general_tab
+                                )
+
+                            [submenu] => Grid/List Card
+                        )
+
+                    [show_listing_share] => Array
+                        (
+                            [label] => Show Share Block
+                            [type] => checkbox
+                            [dependency] => Array
+                                (
+                                    [0] => Array
+                                        (
+                                            [key] => header_current_layout
+                                            [value] => aircrafts||ev_dealer||car_dealer_elementor||car_dealer||car_dealer_two||car_dealer_two_elementor||car_magazine||listing||listing_one_elementor||listing_two||listing_three||listing_three_elementor||listing_four||listing_four_elementor||listing_five||listing_six
+                                            [section] => general_tab
+                                        )
+
+                                    [1] => Array
+                                        (
+                                            [key] => listing_view_type
+                                            [value] => list
+                                        )
+
+                                )
+
+                            [dependencies] => &&
+                            [submenu] => Grid/List Card
+                        )
+
+                    [show_listing_pdf] => Array
+                        (
+                            [label] => Show PDF brochure
+                            [type] => checkbox
+                            [dependency] => Array
+                                (
+                                    [0] => Array
+                                        (
+                                            [key] => header_current_layout
+                                            [value] => aircrafts||ev_dealer||car_dealer_elementor||car_dealer||car_dealer_two||car_dealer_two_elementor||car_magazine||listing||listing_one_elementor||listing_two||listing_three||listing_three_elementor||listing_four||listing_four_elementor||listing_five||listing_six
+                                            [section] => general_tab
+                                        )
+
+                                    [1] => Array
+                                        (
+                                            [key] => listing_view_type
+                                            [value] => list
+                                        )
+
+                                )
+
+                            [dependencies] => &&
+                            [submenu] => Grid/List Card
+                        )
+
+                    [show_listing_quote] => Array
+                        (
+                            [label] => Show &quot;Quote by Phone&quot;
+                            [type] => checkbox
+                            [dependency] => Array
+                                (
+                                    [0] => Array
+                                        (
+                                            [key] => header_current_layout
+                                            [value] => motorcycle
+                                            [section] => general_tab
+                                        )
+
+                                    [1] => Array
+                                        (
+                                            [key] => listing_view_type
+                                            [value] => list
+                                        )
+
+                                )
+
+                            [dependencies] => &&
+                            [submenu] => Grid/List Card
+                        )
+
+                    [show_listing_trade] => Array
+                        (
+                            [label] => Show &quot;Trade Value&quot; Popup
+                            [type] => checkbox
+                            [dependency] => Array
+                                (
+                                    [key] => header_current_layout
+                                    [value] => motorcycle
+                                    [section] => general_tab
+                                )
+
+                            [submenu] => Grid/List Card
+                        )
+
+                    [show_listing_calculate] => Array
+                        (
+                            [label] => Show &quot;Calculate Payment&quot; Popup
+                            [type] => checkbox
+                            [dependency] => Array
+                                (
+                                    [0] => Array
+                                        (
+                                            [key] => header_current_layout
+                                            [value] => motorcycle
+                                            [section] => general_tab
+                                        )
+
+                                    [1] => Array
+                                        (
+                                            [key] => listing_view_type
+                                            [value] => list
+                                        )
+
+                                )
+
+                            [dependencies] => &&
+                            [submenu] => Grid/List Card
+                        )
+
+                    [show_listing_vin] => Array
+                        (
+                            [label] => Show &quot;VIN&quot; Link
+                            [type] => checkbox
+                            [dependency] => Array
+                                (
+                                    [0] => Array
+                                        (
+                                            [key] => header_current_layout
+                                            [value] => motorcycle
+                                            [section] => general_tab
+                                        )
+
+                                    [1] => Array
+                                        (
+                                            [key] => listing_view_type
+                                            [value] => list
+                                        )
+
+                                )
+
+                            [dependencies] => &&
+                            [submenu] => Grid/List Card
+                        )
+
+                    [show_listing_certified_logo_1] => Array
+                        (
+                            [label] => Show Certified Logo 1
+                            [type] => checkbox
+                            [dependency] => Array
+                                (
+                                    [0] => Array
+                                        (
+                                            [key] => header_current_layout
+                                            [value] => aircrafts||ev_dealer||car_dealer_elementor||car_dealer||car_dealer_two||car_dealer_two_elementor||car_magazine||listing||listing_one_elementor||listing_two||listing_three||listing_three_elementor||listing_four||listing_four_elementor||listing_five||listing_six
+                                            [section] => general_tab
+                                        )
+
+                                    [1] => Array
+                                        (
+                                            [key] => listing_view_type
+                                            [value] => list
+                                        )
+
+                                )
+
+                            [dependencies] => &&
+                            [submenu] => Grid/List Card
+                        )
+
+                    [show_listing_certified_logo_2] => Array
+                        (
+                            [label] => Show Certified Logo 2
+                            [type] => checkbox
+                            [dependency] => Array
+                                (
+                                    [0] => Array
+                                        (
+                                            [key] => header_current_layout
+                                            [value] => aircrafts||ev_dealer||car_dealer_elementor||car_dealer||car_dealer_two||car_dealer_two_elementor||car_magazine||listing||listing_one_elementor||listing_two||listing_three||listing_three_elementor||listing_four||listing_four_elementor||listing_five||listing_six
+                                            [section] => general_tab
+                                        )
+
+                                    [1] => Array
+                                        (
+                                            [key] => listing_view_type
+                                            [value] => list
+                                        )
+
+                                )
+
+                            [dependencies] => &&
+                            [submenu] => Grid/List Card
+                        )
+
+                    [sidebar_filter_bg] => Array
+                        (
+                            [label] => Listing Sidebar Filter Background
+                            [type] => image
+                            [dependency] => Array
+                                (
+                                    [0] => Array
+                                        (
+                                            [key] => listing_boat_filter
+                                            [value] => empty
+                                        )
+
+                                    [1] => Array
+                                        (
+                                            [key] => header_current_layout
+                                            [value] => listing
+                                            [section] => general_tab
+                                        )
+
+                                )
+
+                            [dependencies] => &&
+                            [submenu] => Main
+                        )
+
+                    [show_sold_listings] => Array
+                        (
+                            [label] => Sold Listings
+                            [description] => Display sold listings in the Classic and Modern filters
+                            [type] => checkbox
+                            [value] => 
+                            [submenu] => Main
+                            [group] => started
+                        )
+
+                    [sold_badge_bg_color] => Array
+                        (
+                            [label] => Sold Badge Background Color
+                            [type] => color
+                            [mode] => background-color
+                            [value] => #fc4e4e
+                            [submenu] => Main
+                            [group] => ended
+                            [dependency] => Array
+                                (
+                                    [key] => show_sold_listings
+                                    [value] => not_empty
+                                )
+
+                        )
+
+                    [paypal_currency] => Array
+                        (
+                            [label] => Currency
+                            [type] => text
+                            [value] => USD
+                            [description] => Ex.: USD
+                            [submenu] => Pay Pal Settings
+                        )
+
+                    [paypal_email] => Array
+                        (
+                            [label] => Paypal Email
+                            [type] => text
+                            [submenu] => Pay Pal Settings
+                        )
+
+                    [paypal_mode] => Array
+                        (
+                            [label] => Paypal Mode
+                            [type] => select
+                            [options] => Array
+                                (
+                                    [sandbox] => Sandbox
+                                    [live] => Live
+                                )
+
+                            [value] => sandbox
+                            [submenu] => Pay Pal Settings
+                        )
+
+                    [membership_cost] => Array
+                        (
+                            [label] => Membership Price
+                            [type] => text
+                            [description] => Membership submission price
+                            [submenu] => Pay Pal Settings
+                        )
+
+                )
+
+        )
+
+    [single_listing_templates] => Array
+        (
+            [name] => Single Listing Templates
+            [fields] => Array
+                (
+                    [single_listing_template] => Array
+                        (
+                            [label] => Listing Page Template
+                            [type] => mew-repeater-radio
+                            [description] => Select listing page template
+                            [fields] => Array
+                                (
+                                    [0] => Array
+                                        (
+                                            [post_id] => 97134
+                                            [title] => Listing Template #4
+                                            [edit_link] => https://point360-jan-2025.test/wp-admin/post.php?post=97134&action=elementor
+                                            [view_link] => https://point360-jan-2025.test/?p=97134
+                                        )
+
+                                    [1] => Array
+                                        (
+                                            [post_id] => 94913
+                                            [title] => Listing Template #3
+                                            [edit_link] => https://point360-jan-2025.test/wp-admin/post.php?post=94913&action=elementor
+                                            [view_link] => https://point360-jan-2025.test/?p=94913
+                                        )
+
+                                    [2] => Array
+                                        (
+                                            [post_id] => 94912
+                                            [title] => Listing Template #2
+                                            [edit_link] => https://point360-jan-2025.test/wp-admin/post.php?post=94912&action=elementor
+                                            [view_link] => https://point360-jan-2025.test/?p=94912
+                                        )
+
+                                    [3] => Array
+                                        (
+                                            [post_id] => 92074
+                                            [title] => Listing Template #1
+                                            [edit_link] => https://point360-jan-2025.test/wp-admin/post.php?post=92074&action=elementor
+                                            [view_link] => https://point360-jan-2025.test/?p=92074
+                                        )
+
+                                )
+
+                            [value] => 0
+                        )
+
+                )
+
+        )
+
+    [single_listing_van_templates] => Array
+        (
+            [name] => Single Listing Van Templates
+            [fields] => Array
+                (
+                    [single_listing_template_van] => Array
+                        (
+                            [label] => Van Listing Page Template
+                            [type] => mew-repeater-radio-van
+                            [description] => Select Van listing page template
+                            [fields] => Array
+                                (
+                                    [0] => Array
+                                        (
+                                            [post_id] => 97134
+                                            [title] => Listing Template #4
+                                            [edit_link] => https://point360-jan-2025.test/wp-admin/post.php?post=97134&action=elementor
+                                            [view_link] => https://point360-jan-2025.test/?p=97134
+                                        )
+
+                                    [1] => Array
+                                        (
+                                            [post_id] => 94913
+                                            [title] => Listing Template #3
+                                            [edit_link] => https://point360-jan-2025.test/wp-admin/post.php?post=94913&action=elementor
+                                            [view_link] => https://point360-jan-2025.test/?p=94913
+                                        )
+
+                                    [2] => Array
+                                        (
+                                            [post_id] => 94912
+                                            [title] => Listing Template #2
+                                            [edit_link] => https://point360-jan-2025.test/wp-admin/post.php?post=94912&action=elementor
+                                            [view_link] => https://point360-jan-2025.test/?p=94912
+                                        )
+
+                                    [3] => Array
+                                        (
+                                            [post_id] => 92074
+                                            [title] => Listing Template #1
+                                            [edit_link] => https://point360-jan-2025.test/wp-admin/post.php?post=92074&action=elementor
+                                            [view_link] => https://point360-jan-2025.test/?p=92074
+                                        )
+
+                                )
+
+                            [value] => 0
+                        )
+
+                )
+
+        )
+
+    [single_listing_leasing_templates] => Array
+        (
+            [name] => Single Listing Leasing Templates
+            [fields] => Array
+                (
+                    [single_listing_template_leasing] => Array
+                        (
+                            [label] => Leasing Listing Page Template
+                            [type] => mew-repeater-radio-leasing
+                            [description] => Select Leasing listing page template
+                            [fields] => Array
+                                (
+                                    [0] => Array
+                                        (
+                                            [post_id] => 97134
+                                            [title] => Listing Template #4
+                                            [edit_link] => https://point360-jan-2025.test/wp-admin/post.php?post=97134&action=elementor
+                                            [view_link] => https://point360-jan-2025.test/?p=97134
+                                        )
+
+                                    [1] => Array
+                                        (
+                                            [post_id] => 94913
+                                            [title] => Listing Template #3
+                                            [edit_link] => https://point360-jan-2025.test/wp-admin/post.php?post=94913&action=elementor
+                                            [view_link] => https://point360-jan-2025.test/?p=94913
+                                        )
+
+                                    [2] => Array
+                                        (
+                                            [post_id] => 94912
+                                            [title] => Listing Template #2
+                                            [edit_link] => https://point360-jan-2025.test/wp-admin/post.php?post=94912&action=elementor
+                                            [view_link] => https://point360-jan-2025.test/?p=94912
+                                        )
+
+                                    [3] => Array
+                                        (
+                                            [post_id] => 92074
+                                            [title] => Listing Template #1
+                                            [edit_link] => https://point360-jan-2025.test/wp-admin/post.php?post=92074&action=elementor
+                                            [view_link] => https://point360-jan-2025.test/?p=92074
+                                        )
+
+                                )
+
+                            [value] => 0
+                        )
+
+                )
+
+        )
+
+)
+

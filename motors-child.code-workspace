@@ -1,0 +1,23 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../motors"
+		},
+		{
+			"path": "../../plugins/motors-elementor-widgets"
+		},
+		{
+			"path": "../../plugins/motors-listing-types"
+		},
+		{
+			"path": "../../plugins/stm_vehicles_listing"
+		},
+		{
+			"path": "../../plugins/stm-motors-extends"
+		}
+	],
+	"settings": {}
+}
