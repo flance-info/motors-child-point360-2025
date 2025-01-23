@@ -17,6 +17,8 @@ $stmsetpricingoptions = [
     require_once __DIR__ . '/inc/butterbean_metabox_child.php';
     require_once __DIR__ . '/inc/automatic-payment-processor.php';
 
+    require_once __DIR__ . '/inc/generate_thumbnails.php';
+
     require_once __DIR__ . '/inc/vehicle_functions_child.php';
 
     require_once __DIR__ . '/inc/custom_field.php';

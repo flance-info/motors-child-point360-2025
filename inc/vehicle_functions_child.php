@@ -175,7 +175,7 @@ function stm_ajax_add_a_car_media_child()
         );
 
         // Generate meta data
-        wp_update_attachment_metadata($attach_id, wp_generate_attachment_metadata($attach_id, $uploaded['file']));
+     //   wp_update_attachment_metadata($attach_id, wp_generate_attachment_metadata($attach_id, $uploaded['file']));
 
         $attachments_ids[$f] = $attach_id;
     }
@@ -203,8 +203,11 @@ function stm_ajax_add_a_car_media_child()
             $uploaded['file']
         );
 
-        // Generate meta data
-        wp_update_attachment_metadata($attach_id, wp_generate_attachment_metadata($attach_id, $uploaded['file']));
+        // For video files, we only need basic metadata
+        $metadata = array(
+            'file' => _wp_relative_upload_path($uploaded['file'])
+        );
+        wp_update_attachment_metadata($attach_id, $metadata);
 
         $previews_ids[$f] = $attach_id;
     }

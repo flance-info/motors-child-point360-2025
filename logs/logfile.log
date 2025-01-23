@@ -2803,8 +2803,8 @@
                             [value] => date_high
                             [options] => Array
                                 (
-                                    [date_high] => Dato: Nyeste først
-                                    [date_low] => Dato: Ældste først
+                                    [date_high] => Date: newest first
+                                    [date_low] => Date: oldest first
                                     [modelar-car_high] => Model År: highest first
                                     [modelar-car_low] => Model År: lowest first
                                     [kk-car_high] => Kørte KM: highest first
